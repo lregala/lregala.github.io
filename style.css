@@ -9,4 +9,20 @@ html {
 .nav-item {
     padding-left: 10%;
     padding-right: 10%;
+    
+}
+
+.nav_link {
+    color: white;
+    text-decoration: none
+}
+
+.nav-item:hover{
+   background-color: #4b4cab;
+   color: white;
+
+}
+.nav_link:hover {
+    color: white;
+    text-decoration: none
 }
