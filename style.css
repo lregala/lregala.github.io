@@ -1,0 +1,12 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#navmain {
+    background-color: #3e3aa4
+}
+
+.nav-item {
+    padding-left: 10%;
+    padding-right: 10%;
+}
