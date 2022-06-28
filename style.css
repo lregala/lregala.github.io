@@ -1,28 +1,73 @@
 html {
     scroll-behavior: smooth;
 }
+body{
+    background-image: url(img/bgb.JPG);
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+
+    
+}
+
+.aboutpage{
+    /* background-color:rgb(204, 204, 204,0.5); */
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.8));
+    text-align: right;
+    padding-top: 40px;
+    padding-left: 100px;
+    padding-bottom: 200px;
+    padding-right: 100px;
+    
+}
+#about-text{
+    opacity: 1;
+    color:rgb(202, 202, 202)
+}
+h1{
+    opacity: 1;
+    color:rgb(202, 202, 202)
+}
+
+
 
 #navmain {
-    background-color: #3e3aa4
+    /* background-color: #3e3aa4 */
+    
 }
 
 .nav-item {
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-top: 10%;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 10%;
+    font-size: 20px;
     
 }
 
 .nav_link {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none
 }
 
 .nav-item:hover{
-   background-color: #4b4cab;
-   color: white;
+    color: white;
+    background-color: #4974bd;
+   
 
 }
 .nav_link:hover {
     color: white;
     text-decoration: none
+}
+.spacer{
+    /* background-color: #4b4cab; */
+    padding:100px;
+}
+
+.container {
+    color: #fff;
+    font-size: 3em;
+    float: right;
 }
