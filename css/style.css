@@ -1,116 +1,172 @@
-html {
-    scroll-behavior: smooth;
+* {
+    border-radius: 0 !important;
+    font-family: Georgia, serif!important;
+  }
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #223843!important;
+    border: #223843!important;
+  }
+.btn-primary:not(:disabled):not(.disabled):focus{
+    background-color: #D77A61!important;
 }
-body{
-    background-image: url(/img/bgb.JPG);
-    width: 100%;
-    background-size: cover;
-    background-position: left;
-    background-repeat: no-repeat;
     
-    
+.btn-primary:hover {
+    background-color: #D77A61!important;
 }
 
-.aboutpage{
-    /* background-color:rgb(204, 204, 204,0.5); */
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.8));
-    text-align: right;
-    padding-top: 40px;
-    padding-left: 100px;
-    padding-bottom: 200px;
-    padding-right: 200px;
-    
-}
-#about-text{
-    opacity: 1;
-    color:rgb(202, 202, 202)
-}
-h1{
-    opacity: 1;
-    color:rgb(202, 202, 202)
+
+
+
+
+
+body {
+    /* background-color: #EFF1F3; */
+    background-image: url(/img/dscbg.jpg);
+    height: 100%; 
+
+    background-attachment: fixed;
+    background-position-x: center;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
 }
 
 
 
 #navmain {
-    /* background-color: #3e3aa4 */
+    /* background-color: #495867; */
     border-collapse: collapse;
     padding: 0; 
+    padding-right: 7em;
     margin: 0;
+    font-weight: light;
+   
 }
 
 .nav-item {
+    background-color: 495867;
     padding-top: 10%;
     padding-left: 20%;
     padding-right: 20%;
     padding-bottom: 10%;
     font-size: 20px;
+    font-weight: bold;
     
 }
 
 .nav_link {
     color: rgb(255, 255, 255);
-    text-decoration: none
+    text-decoration: none;
+    
 }
 
 .nav-item:hover{
     color: white;
-    background-color: #4974bd;
-   
+    background-color: #D77A61;
 
 }
+
+
 .nav_link:hover {
     color: white;
     text-decoration: none
 }
-.spacer{
-    /* background-color: #4b4cab; */
-    padding:100px;
-}
-
-.sm_spacer{
-    /* background-color: #4b4cab; */
-    padding:25px;
-}
 
 
-#socials {
-    color: #fff;
-    font-size: 2em;
-    float: right;
-    border-collapse: collapse;
-    padding: 0; 
-    margin: 0;
-}
-
- 
-
-#btn-portfolio:hover {
-    color: white;
-    background-color: #4974bd;
-
-}
-
-p {
-    color: #fff;
-}
-
-a {
-    color: #fff;
-    text-decoration: none;
-  }
-
-  a:hover {
-    color: #4974bd;
-  }
-  #contact-detail {
-    font-size: 2em;
-    float: right;
-        border-collapse: collapse;
-    padding: 0; 
-    margin: 0;
-  }
-  #mailtext{
-    font-size: 0.5em;
+#imgcontainer {
     
+    /* /* width: 100%;
+    background-size: cover;
+    background-position: left; */
+    /* background-repeat: no-repeat; */
+}
+
+#jb {
+    /* background-color: #7b3c3c; */
+    /* background-color: #EFF1F3; */
+    background-size: 100%;
+    
+    
+    padding: 2%;
+    padding-left: 16.75%;
+    padding-bottom: 50%;
+    padding-top: 10%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#jb h1{
+    font-size: 5em;
+    font-weight: bold;
+}
+#jb p{
+    font-size: 3em;
+}
+
+
+#about{
+    background-color: rgb(34, 56, 67, 0.5);
+    
+}
+
+#portfolio{
+    background-color: rgb(34, 56, 67, 0.5);
+    
+}
+
+#row {
+    /* background-color: #223843; */
+    
+}
+.col-5{
+    /* background-color: #489934; */
+    /* background-color: #223843; */
+    padding: 2%;
+    
+}
+.col-7 {
+    padding: 5%;
+    padding-left: 15%;
+    font-size: 16px;
+    color: #EFF1F3;
+}
+
+.col-7 h3{
+    font-size: 36px;
+    font-weight: bold;
+    color: #EFF1F3;
+}
+.col-7 h4{
+    font-size: 24px;
+    font-weight: bold;
+    color: #EFF1F3;
+}
+
+
+#spacer{
+    padding: 10em;
+}
+
+
+
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgb(34, 56, 67, 0.5); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 5px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 12px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #D77A61; /* Add a dark-grey background on hover */
   }
