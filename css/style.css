@@ -141,8 +141,23 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x:hidden;
-
 }
+
+#abt-spacer{
+    padding: 3%;
+    background-image: url(/img/dscbg_col.jpg);
+    height: 100%; 
+
+
+    background-attachment: fixed;
+    background-position-x: 60%;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x:hidden;
+}
+
+
 #prt-spacer{
     padding: 3%
 }
