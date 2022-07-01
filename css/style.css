@@ -50,15 +50,12 @@ body {
 
 
 #navmain {
+    background-color: rgba(255, 255, 255, 0.15);
     border-collapse: collapse;
     padding: 0; 
-    padding-right: 20em;
+    padding-right: 25%;
     margin: 0;
     font-weight: light;
-
-    opacity: 0;
-    filter: blur(2px);
-    animation: fade-in 1.5s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
 
 
 }
@@ -73,6 +70,11 @@ body {
     padding-bottom: 10%;
     font-size: 20px;
     font-weight: bold;
+
+
+    opacity: 0;
+    filter: blur(2px);
+    animation: fade-in 1s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
     
 }
 
@@ -97,7 +99,7 @@ body {
 
 #jb {
 
-    
+    background-color: rgba(255, 255, 255, 0.15);
     color: #223843;
     padding: 2%;
     padding-left: 5%;
@@ -105,20 +107,28 @@ body {
     padding-top: 10%;
     background-repeat: no-repeat;
     background-position: center;
+   
+}
+
+
+#jb h1{
+    padding-top: 3%;
+    font-size: 64px;
+    font-weight:900;
+    padding-bottom: 3%;
+
     opacity: 0;
     filter: blur(2px);
     animation: fade-in 1s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-#jb h1{
-    font-size: 4em;
-    font-weight:900;
-    padding-bottom: 3%;
-}
-
 #jb p{
-    font-size: 2em;
+    font-size: 32px;
     padding-bottom: 3%;
+
+    opacity: 0;
+    filter: blur(2px);
+    animation: fade-in 1s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
 @keyframes fade-in {
@@ -128,12 +138,16 @@ body {
     }
 }
 
+#gap{
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
 #spacer{
-    padding: 15em;
+    padding: 20%;
     
     background-image: url(/img/dscbg_col.jpg);
     height: 100%; 
-
+    border: none;
 
     background-attachment: fixed;
     background-position-x: 60%;
@@ -143,10 +157,11 @@ body {
     overflow-x:hidden;
 }
 
-#abt-spacer{
+#abt{
     padding: 3%;
     background-image: url(/img/dscbg_col.jpg);
     height: 100%; 
+    border: none;
 
 
     background-attachment: fixed;
@@ -171,15 +186,16 @@ body {
 #contact {
     text-align: center;
     color: #223843;
-    padding-bottom: 17em;
+    padding-bottom: 25%;
     animation-delay: 2s;
 }
 #contact h1 {
     padding: 5%;
-    padding-top: 5%;
-    padding-bottom: 10%;
+    padding-top: 10%;
+    padding-bottom: 12%;
     text-align: center;
     font-weight: 900;
+    font-size: 36px;
 }
 
 #socials{
@@ -203,7 +219,7 @@ body {
 
 
 #about{
-    
+    border: none;
     background-color: rgba(34, 56, 67,0.3);
     color: #fff;;
     font-weight: 100;
@@ -285,7 +301,7 @@ body {
 
 
 #footer{
-    padding: 8em;
+    padding: 6%;
     background-color: rgba(34, 56, 67,0.3);
     color: #fff;
     font-size: 12px;

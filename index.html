@@ -16,15 +16,15 @@
     </head>
     <body>
         
-        <nav class="navbar navbar-expand-sm navbar-dark" id = "navmain">
+        <nav class="navbar navbar-expand-md navbar-dark" id = "navmain">
             <div class="container">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navmenu">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item" onclick="document.getElementById('about').scrollIntoView()">
-                            <a href="#about" class="nav_link">About</a>
+                        <li class="nav-item" onclick="document.getElementById('abt').scrollIntoView()">
+                            <a href="#abt" class="nav_link">About</a>
                         </li>
                         <li class="nav-item" onclick="document.getElementById('portfolio').scrollIntoView()">
                             <a href="#portfolio" class="nav_link">Portfolio</a>
@@ -51,8 +51,9 @@
             </div>    
         </div>
 
-        <div class="container-fluid">
+        <div class="container-fluid" id="gap">
             <div class="row">
+                <div class="col-sm-6" id="flex_spacer"><p><br></p></div>
                 <div class="col-sm-6" id="flex_spacer"><p><br></p></div>
             </div>
             <div class="row">
@@ -86,12 +87,12 @@
             </div>
         </div>
        
-
+        <div class="row">
+            <div class="col-12-fluid" id="abt"> </div>
+        </div>
         <div class="container-fluid" id="about">
             
-            <div class="row">
-                    <div class="col-12-fluid" id="abt-spacer"> </div>
-            </div>
+
             
             <div class="container fade-in">
                 <div class="row align-items center" id="sec-hdr">
