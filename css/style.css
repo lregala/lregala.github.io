@@ -5,9 +5,9 @@
   }
 
   html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth!important;
   }
-  
+
   .btn:focus,.btn:active {
     outline: none !important;
     box-shadow: none!important;
@@ -159,18 +159,24 @@ body {
 }
 
 
+
+
 #abt-l{
     padding-left: 10%;
+    animation-delay: 2s;
 }
 #abt-r{
     padding-right: 10%;
+    animation-delay: 2s;
 }
 
 #prt-l1{
     padding-right: 3%;
+    animation-delay: 2s;
 }
 #prt-r1{
     padding-left: 3%;
+    animation-delay: 2s;
 }
 
 #sec-hdr {
@@ -182,7 +188,7 @@ body {
     -moz-columns: 2;
   }
 
-  #myBtn {
+#myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
     bottom: 20px; /* Place the button at the bottom of the page */
@@ -213,4 +219,19 @@ body {
 
 .fade-in.appear {
     opacity: 1;
+}
+
+#footer{
+    padding: 5em;
+    background-color: rgba(34, 56, 67,0.5);
+    color: #fff;
+    font-size: 12px;
+
+    /* background-attachment: fixed;
+    background-position-x: 60%;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x:hidden; */
+
 }
