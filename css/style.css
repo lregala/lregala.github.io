@@ -3,6 +3,11 @@
     font-family: Georgia, serif!important;
     /* overflow: hidden!important; */
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
   .btn:focus,.btn:active {
     outline: none !important;
     box-shadow: none!important;
