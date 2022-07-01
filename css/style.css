@@ -1,11 +1,18 @@
 * {
     border-radius: 0 !important;
-    font-family: Georgia, serif!important;
+    /* font-family: Georgia, serif!important; */
+    font-family: 'Playfair Display', serif!important;
   }
 
   html {
     scroll-behavior: smooth!important;
   }
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap');
+
+
+
 
   .btn:focus,.btn:active {
     outline: none !important;
@@ -45,9 +52,15 @@ body {
 #navmain {
     border-collapse: collapse;
     padding: 0; 
-    padding-right: 6em;
+    padding-right: 20em;
     margin: 0;
     font-weight: light;
+
+    opacity: 0;
+    filter: blur(2px);
+    animation: fade-in 1.5s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+
+
 }
 
 
@@ -94,7 +107,7 @@ body {
     background-position: center;
     opacity: 0;
     filter: blur(2px);
-    animation: fade-in 1s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+    animation: fade-in 1.5s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
 #jb h1{
@@ -133,18 +146,54 @@ body {
 }
 
 #flex_spacer{
-    padding: 30%;
+    padding-top: 17%;
+    padding-bottom: 30%;
 }
 
+
+#contact {
+    text-align: center;
+    color: #223843;
+    padding-bottom: 25%;
+}
+#contact h1 {
+    padding: 5%;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    text-align: center;
+    font-weight: 900;
+}
+
+#socials{
+    
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    
+}
+
+
+#socials ul{
+    list-style-type: none; /* Remove bullets */
+    padding-left: 0;
+}
+
+#iconlist li{
+    display: inline-block;
+    padding: 10px
+}
+
+
 #about{
-    background-color: rgb(73, 88, 103, 0);
+    
+    background-color: rgba(34, 56, 67,0.3);
     color: #fff;;
     font-weight: 100;
     padding-bottom: 4%;
 }
 
 #portfolio{
-    background-color: rgb(73, 88, 103, 0);
+    background-color: rgba(34, 56, 67,0.3);
     color: #fff;;
     font-weight:100;
   
@@ -173,7 +222,7 @@ body {
 }
 
 #sec-hdr {
-    padding: 2%;
+    padding: 3%;
 }
 #sub-ul {
     columns: 2;
@@ -205,7 +254,7 @@ body {
 
 .fade-in {
     opacity: 0;
-    transition: opacity 300ms ease-in;
+    transition: opacity 500ms ease-in;
 
 }
 
@@ -214,9 +263,12 @@ body {
     opacity: 1;
 }
 
+
+
+
 #footer{
     padding: 8em;
-    background-color: rgba(34, 56, 67,0.5);
+    background-color: rgba(34, 56, 67,0.3);
     color: #fff;
     font-size: 12px;
 

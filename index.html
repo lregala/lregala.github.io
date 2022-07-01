@@ -7,6 +7,12 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/8e663f6748.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/style.css">
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
     </head>
     <body>
         
@@ -22,6 +28,9 @@
                         </li>
                         <li class="nav-item" onclick="document.getElementById('portfolio').scrollIntoView()">
                             <a href="#portfolio" class="nav_link">Portfolio</a>
+                        </li>
+                        <li class="nav-item" onclick="document.getElementById('contact').scrollIntoView()">
+                            <a href="#contact" class="nav_link">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -45,7 +54,25 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xl-6" id="flex_spacer"><p><br></p></div>
-                <div class="col-xl-6" id="flex_spacer"><p><br></p></div>
+            </div>
+            <div class="row">
+                <div class="col fade-in">
+                    <div id="contact">
+                      
+                        <h1 onclick="document.getElementById('contact').scrollIntoView()">Contact</h1>
+                       
+                        <div class="col-xs d-flex justify-content-center" id="socials">
+                     
+                            <ul id="iconlist">
+                                <li><a href="https://github.com/lregala"><img src="/img/gh-square64.png" class="img-fluid"  alt="Github logo" ></a></li>
+                                <li><a href="https://www.linkedin.com/in/lregala/"><img src="/img/li-square64.png" class="img-fluid"  alt="Linkedin logo" ></a></li>
+                                <li><a href="https://www.instagram.com/leoregala/?hl=en"><img src="/img/ig-square64.png" class="img-fluid"  alt="Instagram logo"></a></li>
+                                <li><a href = "mailto: lregala.b@gmail.com"><img src="/img/ml-square64.png" class="img-fluid"  alt="Mail logo"></a></li>
+                                <!-- <li><img src="/img/yt-square64.png" class="img-fluid"  alt="Instagram logo" ></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         
@@ -61,7 +88,7 @@
             <div class="container fade-in">
                 <div class="row align-items center" id="sec-hdr">
                     <div class="col d-flex justify-content-center">
-                        <h1><b>About Me</b></h1>
+                        <h1><b>About</b></h1>
                     </div>
                 </div>
                 <div class="row">
@@ -74,13 +101,15 @@
                     <div class="col" id="abt-r">
                         <div class="float-start">
                             <p>
-                                Hi, I'm Leo, a Canadian-based self-taught developer who loves blending art with coding. 
-                                <br>I love to design and create all sorts of things, from art to many lines of code.
-                                <br>Currently, I'm learning Web Development - it's a suitable field to channel my creativity.
+                                Hi, I'm Leo, a Canadian-based self-taught developer.
+                                <br>As an artist for many years, I like to experiment with different mediums.
+                                <br>I see web development as another canvas to channel my creative energy.
+                                <br>I love to design and create all sorts of things, from art to lines of code.
                                 <br>
                                 <br>While I am relatively new to this space, 
-                                <br>I bring with me 25 years of experience making gorgeous art.
-                                <br>This page is an ever-growing gallery of my creations. Feel free to have a look around!
+                                <br>I bring with me 25 years of experience making amazing artworks.
+                                <br>This page is an ever-growing gallery of my creations. 
+                                <br>Feel free to have a look around!
                             </p>
                             <br>
                             <h4>Technical Experience:</h4>
@@ -92,6 +121,17 @@
                                 <li>VBA</li>
                                 <li>Bootstrap</li>
                             </ul>
+
+                            <!-- <div class="col d-flex justify-content-center" id="socials">
+                                <span>
+
+                                    <img src="/img/gh-square64.png" class="img-fluid" alt="Github logo" >
+                                    <img src="/img/li-square64.png" class="img-fluid" alt="Github logo" >
+                                    <img src="/img/ig-square64.png" class="img-fluid" alt="Github logo" >
+                                </span>
+                            </div>
+                            -->
+                            
                         </div>
                     </div>
                 </div>
@@ -208,12 +248,12 @@
                     <div class="float-end">
                         <h2>Job Board Scraper</h2>
                         <p>
-                            A Job Board Scraper written in Python.
+                            An Indeed job posting scraper written in Python.
                             <br>The user specifies Job Title and Location in the Terminal.
-                            <br>The script will send multiple requests to the job board and parse
-                            <br>the responses using Beautiful Soup.
+                            <br>The script will send multiple requests to the job board and 
+                            <br>parse the responses using Beautiful Soup.
                             <br>
-                            <br>The scraped job postings will then be exported to excel
+                            <br>The scraped job postings will then be exported to Excel
                             <br>using the Pandas library.
                         </p>
                     </div>
