@@ -1,8 +1,14 @@
 * {
     border-radius: 0 !important;
     font-family: Georgia, serif!important;
+    /* overflow: hidden!important; */
   }
-.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+  .btn:focus,.btn:active {
+    outline: none !important;
+    box-shadow: none!important;
+ }
+
+  .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
     background-color: #223843!important;
     border: #223843!important;
   }
@@ -15,23 +21,19 @@
 }
 
 
-
-
-
-
 body {
     background-color: #54626F;
     background-image: url(/img/dscbg.jpg);
-    height: 100%; 
+    width: 100%; 
 
     background-attachment: fixed;
-    background-position-x: center;
+    background-position-x: 60%;
     background-position-y: 50%;
     background-repeat: no-repeat;
     background-size: cover;
- 
+    overflow-x:hidden;
+    
 }
-
 
 
 #navmain {
@@ -41,8 +43,14 @@ body {
     padding-right: 6em;
     margin: 0;
     font-weight: light;
-   
+    /* float: right; */
 }
+
+/* .navbar-nav > li{
+    margin-left:11%;
+    margin-right:11%;
+    padding: 11%;
+  } */
 
 .nav-item {
     background-color: 495867;
@@ -74,23 +82,14 @@ body {
     text-decoration: none
 }
 
-
-#imgcontainer {
-    
-    /* /* width: 100%;
-    background-size: cover;
-    background-position: left; */
-    /* background-repeat: no-repeat; */
-}
-
 #jb {
     /* background-color: #7b3c3c; */
     /* background-color: #EFF1F3; */
-    background-size: 100%;
+    /* background-size: 100%; */
     
     color: #223843;
     padding: 2%;
-    padding-left: 16.75%;
+    padding-left: 5%;
     padding-bottom: 10%;
     padding-top: 10%;
     background-repeat: no-repeat;
@@ -101,7 +100,7 @@ body {
 }
 
 #jb h1{
-    font-size: 5em;
+    font-size: 4em;
     font-weight:900;
 }
 
@@ -116,94 +115,69 @@ body {
     }
 }
 
-
-
-
-
-#about{
-    background-color: rgb(73, 88, 103, 0);
-    color:#ffffff;
-    /* margin-top: 4.5em; */
-    padding-left: 20%;
-}
-
-
-
-#portfolio{
-    background-color: rgb(34, 56, 67, 0.15);
-}
-
-#row {
-    /* background-color: #223843; */
-    
-}
-
-#about h2{
-    font-size: 36px;
-    font-weight: bold;
-    /* color: #EFF1F3; */
-    padding-top: 2%;
-    padding-right: 2%;
-    text-align: right;
-
-    
-
-}
-.col-md-4{
-    /* background-color: #489934; */
-    /* background-color: #223843; */
-    padding: 2%;
-    
-}
-.col-md-8 {
-    padding: 2%;
-    padding-left: 5%;
-    font-size: 16px;
-    /* color: #EFF1F3; */
-}
-
-.col-md-8 h3{
-    font-size: 24px;
-    font-weight: bold;
-    /* color: #EFF1F3; */
-}
-.col-md-8 h4{
-    font-size: 24px;
-    font-weight: bold;
-    /* color: #EFF1F3; */
-}
-
-
-
-
-.col-xl-6{
-    /* background-color: #489934; */
-    /* background-color: #223843; */
-    padding-top: 24%;
-    padding-bottom: 24%;
-}
-
 #spacer{
     padding: 15em;
     
     background-image: url(/img/dscbg_col.jpg);
     height: 100%; 
 
+
     background-attachment: fixed;
-    background-position-x: center;
+    background-position-x: 60%;
     background-position-y: 50%;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow-x:hidden;
 
 }
+#prt-spacer{
+    padding: 3%
+}
 
-/* .blur-box {
-    background-color: #555;
-    box-shadow: 0 0 5px 10px #555;
-} */
+#flex_spacer{
+    padding: 30%;
+}
+
+#about{
+    background-color: rgb(73, 88, 103, 0);
+    color: #fff;;
+    font-weight: 100;
+    padding-bottom: 4%;
+}
+
+#portfolio{
+    background-color: rgb(73, 88, 103, 0);
+    color: #fff;;
+    font-weight:100;
+  
+    padding-bottom: 4%;
+}
 
 
-#myBtn {
+#abt-l{
+    padding-left: 10%;
+}
+#abt-r{
+    padding-right: 10%;
+}
+
+#prt-l1{
+    padding-right: 3%;
+}
+#prt-r1{
+    padding-left: 3%;
+}
+
+#sec-hdr {
+    padding: 2%;
+}
+#sub-ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
+
+  #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
     bottom: 20px; /* Place the button at the bottom of the page */
@@ -235,4 +209,3 @@ body {
 .fade-in.appear {
     opacity: 1;
 }
-
