@@ -38,7 +38,7 @@ body {
     /* background-color: #495867; */
     border-collapse: collapse;
     padding: 0; 
-    padding-right: 7em;
+    padding-right: 6em;
     margin: 0;
     font-weight: light;
    
@@ -54,6 +54,7 @@ body {
     font-weight: bold;
     
 }
+
 
 .nav_link {
     color: rgb(255, 255, 255);
@@ -87,68 +88,119 @@ body {
     /* background-color: #EFF1F3; */
     background-size: 100%;
     
-    
+    color: #223843;
     padding: 2%;
     padding-left: 16.75%;
-    padding-bottom: 50%;
+    padding-bottom: 10%;
     padding-top: 10%;
     background-repeat: no-repeat;
     background-position: center;
+    opacity: 0;
+    filter: blur(2px);
+    animation: fade-in 1s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
 #jb h1{
     font-size: 5em;
-    font-weight: bold;
+    font-weight:900;
 }
+
 #jb p{
-    font-size: 3em;
+    font-size: 2em;
 }
+
+@keyframes fade-in {
+100% {
+      opacity: 1;
+      filter: blur(0);
+    }
+}
+
+
+
 
 
 #about{
-    background-color: rgb(34, 56, 67, 0.5);
-    
+    background-color: rgb(73, 88, 103, 0);
+    color:#ffffff;
+    /* margin-top: 4.5em; */
+    padding-left: 20%;
 }
 
+
+
 #portfolio{
-    background-color: rgb(34, 56, 67, 0.5);
-    
+    background-color: rgb(34, 56, 67, 0.15);
 }
 
 #row {
     /* background-color: #223843; */
     
 }
-.col-5{
+
+#about h2{
+    font-size: 36px;
+    font-weight: bold;
+    /* color: #EFF1F3; */
+    padding-top: 2%;
+    padding-right: 2%;
+    text-align: right;
+
+    
+
+}
+.col-md-4{
     /* background-color: #489934; */
     /* background-color: #223843; */
     padding: 2%;
     
 }
-.col-7 {
-    padding: 5%;
-    padding-left: 15%;
+.col-md-8 {
+    padding: 2%;
+    padding-left: 5%;
     font-size: 16px;
-    color: #EFF1F3;
+    /* color: #EFF1F3; */
 }
 
-.col-7 h3{
-    font-size: 36px;
-    font-weight: bold;
-    color: #EFF1F3;
-}
-.col-7 h4{
+.col-md-8 h3{
     font-size: 24px;
     font-weight: bold;
-    color: #EFF1F3;
+    /* color: #EFF1F3; */
+}
+.col-md-8 h4{
+    font-size: 24px;
+    font-weight: bold;
+    /* color: #EFF1F3; */
 }
 
+
+
+
+.col-xl-6{
+    /* background-color: #489934; */
+    /* background-color: #223843; */
+    padding-top: 24%;
+    padding-bottom: 24%;
+}
 
 #spacer{
-    padding: 10em;
+    padding: 15em;
+    
+    background-image: url(/img/dscbg_col.jpg);
+    height: 100%; 
+
+    background-attachment: fixed;
+    background-position-x: center;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
-
+/* .blur-box {
+    background-color: #555;
+    box-shadow: 0 0 5px 10px #555;
+} */
 
 
 #myBtn {
@@ -170,3 +222,17 @@ body {
   #myBtn:hover {
     background-color: #D77A61; /* Add a dark-grey background on hover */
   }
+
+
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 300ms ease-in;
+
+}
+
+
+.fade-in.appear {
+    opacity: 1;
+}
+
