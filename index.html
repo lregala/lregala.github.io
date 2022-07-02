@@ -23,15 +23,16 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navmenu">
                     <ul class="navbar-nav ms-auto">
+                        <li class="nav-item" onclick="document.getElementById('contact').scrollIntoView()">
+                            <a href="#contact" class="nav_link">Contact</a>
+                        </li>
                         <li class="nav-item" onclick="document.getElementById('abt').scrollIntoView()">
                             <a href="#abt" class="nav_link">About</a>
                         </li>
                         <li class="nav-item" onclick="document.getElementById('portfolio').scrollIntoView()">
                             <a href="#portfolio" class="nav_link">Portfolio</a>
                         </li>
-                        <li class="nav-item" onclick="document.getElementById('contact').scrollIntoView()">
-                            <a href="#contact" class="nav_link">Contact</a>
-                        </li>
+                       
                     </ul>
                 </div>
             </div>
@@ -54,7 +55,7 @@
         <div class="container-fluid" id="gap">
             <div class="row">
                 <div class="col-sm-6" id="flex_spacer"><p><br></p></div>
-                <div class="col-sm-6" id="flex_spacer"><p><br></p></div>
+                
             </div>
             <div class="row">
                 <div class="col fade-in">
@@ -65,11 +66,30 @@
                         <div class="col-sm d-flex justify-content-center" id="socials">
                      
                             <ul id="iconlist">
-                                <li><a href="https://github.com/lregala"><img src="/img/gh-square64.png" class="img-fluid"  alt="Github logo" ></a></li>
-                                <li><a href="https://www.linkedin.com/in/lregala/"><img src="/img/li-square64.png" class="img-fluid"  alt="Linkedin logo" ></a></li>
-                                <li><a href="https://www.instagram.com/leoregala/?hl=en"><img src="/img/ig-square64.png" class="img-fluid"  alt="Instagram logo"></a></li>
-                                <li><a href = "mailto: lregala.b@gmail.com"><img src="/img/ml-square64.png" class="img-fluid"  alt="Mail logo"></a></li>
-                                <!-- <li><img src="/img/yt-square64.png" class="img-fluid"  alt="Instagram logo" ></li> -->
+                                <li>
+                                    <a href="https://github.com/lregala" id="lgh">
+                                        <img src="/img/gh-square64.png" class="img-fluid"   alt="Github logo" >
+                                        <img src="/img/gh-square64_hl.png" class="img-fluid"   alt="Github logo" >
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/lregala/" id="lli">
+                                        <img src="/img/li-square64.png" class="img-fluid"   alt="Linkedin logo" >
+                                        <img src="/img/li-square64-hl.png" class="img-fluid"   alt="Linkedin logo" >
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/leoregala/?hl=en" id="lig">
+                                        <img src="/img/ig-square64.png" class="img-fluid"  alt="Instagram logo">
+                                        <img src="/img/ig-square64-hl.png" class="img-fluid"  alt="Instagram logo">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href = "mailto: lregala.b@gmail.com" id="lml">
+                                        <img src="/img/ml-square64.png" class="img-fluid"   alt="Mail logo">
+                                        <img src="/img/ml-square64-hl.png" class="img-fluid"   alt="Mail logo">
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>

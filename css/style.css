@@ -187,7 +187,7 @@ body {
     text-align: center;
     color: #223843;
     padding-bottom: 25%;
-    animation-delay: 2s;
+    animation-delay: 1s;
 }
 #contact h1 {
     padding: 5%;
@@ -216,6 +216,53 @@ body {
     display: inline-block;
     padding: 10px
 }
+
+/* #iconlist li:hover{
+    background-color: #D77A61; 
+} */
+
+#lgh img:last-child {
+    display: none;  
+  }
+#lgh:hover img:last-child {
+    display: inline-block;  
+  }
+#lgh:hover img:first-child {
+    display: none;  
+  }
+
+
+#lli img:last-child {
+    display: none;  
+  }
+#lli:hover img:last-child {
+    display: inline-block;  
+  }
+#lli:hover img:first-child {
+    display: none;  
+  }
+
+
+#lig img:last-child {
+    display: none;  
+  }
+#lig:hover img:last-child {
+    display: inline-block;  
+  }
+#lig:hover img:first-child {
+    display: none;  
+  }
+
+
+#lml img:last-child {
+    display: none;  
+  }
+#lml:hover img:last-child {
+    display: inline-block;  
+  }
+#lml:hover img:first-child {
+    display: none;  
+  }
 
 
 #about{
