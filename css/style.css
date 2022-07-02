@@ -12,8 +12,6 @@
   @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap');
 
 
-
-
   .btn:focus,.btn:active {
     outline: none !important;
     box-shadow: none!important;
@@ -53,7 +51,7 @@ body {
     background-color: rgba(255, 255, 255, 0.15);
     border-collapse: collapse;
     padding: 0; 
-    padding-right: 25%;
+    padding-right: 20%;
     margin: 0;
     font-weight: light;
 
@@ -107,7 +105,8 @@ body {
     padding-top: 10%;
     background-repeat: no-repeat;
     background-position: center;
-   
+    /* background-color: linear-gradient(to bottom, rgba(255,255,255,0.15), rgba(255,255,255,0)); */
+    /* box-shadow: 0px 0px 10px #fff; */
 }
 
 
@@ -143,7 +142,7 @@ body {
 }
 
 #spacer{
-    padding: 20%;
+    padding: 30%;
     
     background-image: url(/img/dscbg_col.jpg);
     height: 100%; 
@@ -178,24 +177,8 @@ body {
 }
 
 #flex_spacer{
-    padding-top: 5%;
-    padding-bottom: 5%;
-}
-
-
-#contact {
-    text-align: center;
-    color: #223843;
-    padding-bottom: 25%;
-    animation-delay: 1s;
-}
-#contact h1 {
-    padding: 5%;
-    padding-top: 10%;
-    padding-bottom: 12%;
-    text-align: center;
-    font-weight: 900;
-    font-size: 36px;
+    padding-top: 7%;
+    padding-bottom: 7%;
 }
 
 #socials{
@@ -210,16 +193,15 @@ body {
 #socials ul{
     list-style-type: none; /* Remove bullets */
     padding-left: 0;
+    padding-right: 0;
 }
 
 #iconlist li{
     display: inline-block;
-    padding: 10px
+    padding: 4px
 }
 
-/* #iconlist li:hover{
-    background-color: #D77A61; 
-} */
+
 
 #lgh img:last-child {
     display: none;  
@@ -285,20 +267,31 @@ body {
 
 
 #abt-l{
-    padding-left: 10%;
+    padding-right: 4%;
     animation-delay: 2s;
 }
 #abt-r{
-    padding-right: 10%;
+    padding-left: 4%;
+    padding-right: 0;
     animation-delay: 2s;
+    padding-top: 5px;
 }
 
 #prt-l1{
-    padding-right: 3%;
+    padding-right: 4%;
     animation-delay: 2s;
 }
 #prt-r1{
-    padding-left: 3%;
+    padding-left: 4%;
+    animation-delay: 2s;
+}
+
+#prt-l2{
+    padding-right: 2%;
+    animation-delay: 2s;
+}
+#prt-r2{
+    padding-left: 4%;
     animation-delay: 2s;
 }
 
@@ -306,10 +299,16 @@ body {
     padding: 3%;
 }
 #sub-ul {
-    columns: 2;
+    /* font-size: 12px; */
+    padding: 4px;
+    /* columns: 2;
     -webkit-columns: 2;
-    -moz-columns: 2;
+    -moz-columns: 2; */
   }
+
+.float-start h4{
+    font-size: 24px;
+}
 
 #myBtn {
     display: none; 
@@ -348,10 +347,11 @@ body {
 
 
 #footer{
-    padding: 6%;
-    background-color: rgba(34, 56, 67,0.3);
+    padding-top: 8%;
+    padding-bottom: 4%;
+    background-color: rgba(34, 56, 67,0.7);
     color: #fff;
-    font-size: 12px;
+    font-size: 16px;
 
 
 }
