@@ -123,6 +123,7 @@ body {
 
 #jb p{
     font-size: 32px;
+    font-weight: 700;
     padding-bottom: 3%;
 
     opacity: 0;
@@ -297,6 +298,7 @@ body {
 
 #sec-hdr {
     padding: 3%;
+    
 }
 #sub-ul {
     /* font-size: 12px; */
