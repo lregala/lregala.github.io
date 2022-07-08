@@ -33,7 +33,7 @@
 body {
     background-color: #54626F;
     background-image: url(/img/dscbg.jpg);
-    /* width: 100%; */
+    width: 100%;
     /* height: 99vh; */
     height: 100vh;
     /* height: calc(var(--vh, 1vh)*100); */
@@ -43,7 +43,7 @@ body {
     background-position: fixed;
     /* position: absolute; */
     background-position-x: 60%;
-    background-position-y: 50%;
+    background-position-y: -12vh;
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x:hidden;
