@@ -6,9 +6,17 @@
 //     document.documentElement.style.setProperty('--vh', `${vh}px`);
 //  });
 
+function appHeight() {
+    const doc = document.documentElement;
+    doc.style.setProperty('--vh', (window.innerHeight*.01)+'px');
+
+}
+
+window.addEventListener('resize',appHeight);
+appHeight;
 
 
- let mybutton = document.getElementById("myBtn"); //Get the button:
+let mybutton = document.getElementById("myBtn"); //Get the button:
 
 
  // When the user scrolls down 20px from the top of the document, show the button
