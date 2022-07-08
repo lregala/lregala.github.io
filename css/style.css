@@ -40,7 +40,8 @@ body {
     /* height: calc(100vh-calc(100vh - 100%)); */
     /* position: fixed; */
     background-attachment: fixed;
-    background-position: absolute;
+    background-position: fixed;
+    /* position: absolute; */
     background-position-x: 60%;
     background-position-y: 50%;
     background-repeat: no-repeat;
