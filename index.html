@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, minimum-scale=1.0,maximum-scale=1.0"/>
-        <title>Leo R - Artist | Developer</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <script src="https://kit.fontawesome.com/8e663f6748.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="css/style.css">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0,maximum-scale=1.0"/>
+    <title>Leo R - Artist | Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8e663f6748.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/style.css">
 
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-        <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
-    </head>
-    <body>
-        
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+</head>
+<body>
+    <div class="container-fluid" id="bg"> </div>
+    <div class="content">
         <nav class="navbar navbar-expand-md navbar-dark" id = "navmain">
             <div class="container">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
@@ -29,15 +30,13 @@
                         <li class="nav-item" onclick="document.getElementById('portfolio').scrollIntoView()">
                             <a href="#portfolio" class="nav_link">Portfolio</a>
                         </li>
-                       
+                        
                     </ul>
                 </div>
             </div>
         </nav>
-       
-        
         <div class="container-fluid" id="jb">
-            <div class="row">
+            <div class="row" id="jb-inner">
                 <div class="col-sm-3"></div>
                 <div class="col-sm-9">
                     <h1>Leo Regala</h1>
@@ -45,11 +44,12 @@
                     <p class="lead">
                         <a class="btn btn-primary btn-lg" href="#portfolio" role="button" id="btn_explore">Explore</a>
                     </p>
+                    <p id="screensize"></p>
                 </div> 
             </div>    
         </div>
         <div class="container-fluid" id="gap">
-            <div class="row">
+            <div class="row" id="gap-inner">
                 <div class="col-lg-2" id="flex_spacer"><p><br></p></div>
                 <div class="col-lg-2" id="flex_spacer"><p><br></p></div>
                 <div class="col-lg-2" id="flex_spacer"><p><br></p></div>
@@ -58,236 +58,218 @@
                 <div class="col-lg-2" id="flex_spacer"><p><br></p></div>
             </div>
         </div>
-        
-        
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12-fluid" id="spacer"> </div>
             </div>
         </div>
-       
-        <div class="row">
-            <div class="col-12-fluid" id="abt"> </div>
-        </div>
-        <div class="container-fluid" id="about">    
-            <div class="container fade-in">
-                <div class="row align-items center" id="sec-hdr">
-                    <div class="col d-flex justify-content-center">
-                        <h1><b>About</b></h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col me" id="abt-l">
-                        <div class="float-end">
-                            <img src="/img/side6.jpg" class="img-fluid" alt="Responsive image" >
+        <div class="container-fluid" id="abt">
+            <div class="row" id="about">
+                <div class="container" id="abt-inner">
+                    <div class="row align-items center fade-in" id="sec-hdr">
+                        <div class="col d-flex justify-content-center">
+                            <h1><b>About</b></h1>
                         </div>
-                        
                     </div>
-                    <div class="col" id="abt-r">
-                        <div class="float-start">
-                            <p>
-                                Hi, I'm Leo, a Canadian-based self-taught developer.
-                                <br>As an artist for many years, I like to experiment with different mediums.
-                                <br>I see web development as another canvas to channel my creative energy.
-                                <br>I love to design and create all sorts of things, from art to lines of code.
-                                <br>
-                                <br>While I am relatively new to this space, 
-                                <br>I bring with me 25 years of experience making amazing artworks.
-                                <br>This page is an ever-growing gallery of my creations. 
-                                <br>Feel free to have a look around!
-                            </p>
-                            <h4>Technical Experience:</h4>
-                            <ul  id="sub-ul">
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JavaScript</li>
-                                <li>Python</li>
-                                <li>VBA</li>
-                                <li>Bootstrap</li>
-                            </ul>
-                            <div class="col-sm d-flex justify-content-left" id="socials">
-                                <ul id="iconlist">
-                                    <li>
-                                        <a href="https://github.com/lregala" id="lgh">
-                                            <img src="/img/icons/gh-square48.png" class="img-fluid"   alt="Github logo" >
-                                            <img src="/img/icons/gh-square48_hl.png" class="img-fluid"   alt="Github logo" >
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.linkedin.com/in/lregala/" id="lli">
-                                            <img src="/img/icons/li-square48.png" class="img-fluid"   alt="Linkedin logo" >
-                                            <img src="/img/icons/li-square48-hl.png" class="img-fluid"   alt="Linkedin logo" >
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com/leoregala/?hl=en" id="lig">
-                                            <img src="/img/icons/ig-square48.png" class="img-fluid"  alt="Instagram logo">
-                                            <img src="/img/icons/ig-square48-hl.png" class="img-fluid"  alt="Instagram logo">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href = "mailto: lregala.b@gmail.com" id="lml">
-                                            <img src="/img/icons/ml-square48.png" class="img-fluid"   alt="Mail logo">
-                                            <img src="/img/icons/ml-square48-hl.png" class="img-fluid"   alt="Mail logo">
-                                        </a>
-                                    </li>
+                    <div class="row fade-in">
+                        <div class="col me" id="abt-l">
+                            <div class="float-end">
+                                <img src="/img/side6.jpg" class="img-fluid" alt="Responsive image" id="profile-pic">
+                            </div>
+                            
+                        </div>
+                        <div class="col" id="abt-r">
+                            <div class="float-start">
+                                <p>
+                                    Hi, I'm Leo, a Canadian-based self-taught developer.
+                                    <br>As an artist for many years, I like to experiment with different mediums.
+                                    <br>I see web development as another canvas to channel my creative energy.
+                                    <br>I love to design and create all sorts of things, from art to lines of code.
+                                    <br>
+                                    <br>While I am relatively new to this space, 
+                                    <br>I bring with me 25 years of experience making amazing artworks.
+                                    <br>This page is an ever-growing gallery of my creations. 
+                                    <br>Feel free to have a look around!
+                                </p>
+                                <h4>Technical Experience:</h4>
+                                <ul  id="sub-ul">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>Python</li>
+                                    <li>VBA</li>
+                                    <li>Bootstrap</li>
                                 </ul>
+                                <div class="col-sm d-flex justify-content-left" id="socials">
+                                    <ul id="iconlist">
+                                        <li>
+                                            <a href="https://github.com/lregala" id="lgh">
+                                                <img src="/img/icons/gh-square48.png" class="img-fluid"   alt="Github logo" >
+                                                <img src="/img/icons/gh-square48_hl.png" class="img-fluid"   alt="Github logo" >
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.linkedin.com/in/lregala/" id="lli">
+                                                <img src="/img/icons/li-square48.png" class="img-fluid"   alt="Linkedin logo" >
+                                                <img src="/img/icons/li-square48-hl.png" class="img-fluid"   alt="Linkedin logo" >
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.instagram.com/leoregala/?hl=en" id="lig">
+                                                <img src="/img/icons/ig-square48.png" class="img-fluid"  alt="Instagram logo">
+                                                <img src="/img/icons/ig-square48-hl.png" class="img-fluid"  alt="Instagram logo">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href = "mailto: lregala.b@gmail.com" id="lml">
+                                                <img src="/img/icons/ml-square48.png" class="img-fluid"   alt="Mail logo">
+                                                <img src="/img/icons/ml-square48-hl.png" class="img-fluid"   alt="Mail logo">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>    
         </div>
-
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12-fluid" id="spacer"> </div>
             </div>
         </div>
-
-
-
         <div class="container-fluid" id="portfolio">
-            <div class="row align-items center" id="sec-hdr">
-                <div class="container fade-in">
-                    <div class="col d-flex justify-content-center">
-                        <h1><b>Portfolio</b></h1>
+            <div class="row" id="port-inner">
+                <div class="row align-items center" id="sec-hdr">
+                    <div class="container fade-in">
+                        <div class="col d-flex justify-content-center">
+                            <h1><b>Portfolio</b></h1>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-12-fluid" id="prt-spacer"> </div>
-            </div>
-
-
-            <div class="row">
-                <div class="col me fade-in" id="prt-l1">
-                    <div class="float-end">
-                        <img src="/img/LBM-3D.gif" class="img-fluid">
-                    </div>
-                    
+                <div class="row">
+                    <div class="col-12-fluid" id="prt-spacer"> </div>
                 </div>
-                <div class="col-6 fade-in" id="prt-r1">
-                    <div class="float-start">
-                        <h2>Fluid Flow Simulator - 3D</h2>
-                        <br>
-                        <p>
-                            A 3D Flow simulator written in Python, using the Lattice Boltzmann Method
-                            <br>instead of the traditional Navier-Stokes equations to simulate fluid flow.
+                <div class="row">
+                    <div class="col me fade-in" id="prt-l1">
+                        <div class="float-end">
+                            <img src="/img/LBM-3D.gif" class="img-fluid">
+                        </div>
+                        
+                    </div>
+                    <div class="col-6 fade-in" id="prt-r1">
+                        <div class="float-start">
+                            <h2>Fluid Flow Simulator - 3D</h2>
                             <br>
-                            <br>The animation on the left is a simulation of a free jet flowing into a box-shaped region.
-                            <br>A snapshot of the velocity field is captured every nth time-steps to produce this animation.
-                            <br>The snapshots are taken along a planar slice of the 3D Domain.
-                            <br>
-                            <br>This simulator is able to handle high Reynolds numbers due to Turbulence modeling.
-                            <br>Turbulence is handled by using the Smagorinsky sub-grid scale model.
-                        </p>
+                            <p>
+                                A 3D Flow simulator written in Python, using the Lattice Boltzmann Method
+                                <br>instead of the traditional Navier-Stokes equations to simulate fluid flow.
+                                <br>
+                                <br>The animation on the left is a simulation of a free jet flowing into a box-shaped region.
+                                <br>A snapshot of the velocity field is captured every nth time-steps to produce this animation.
+                                <br>The snapshots are taken along a planar slice of the 3D Domain.
+                                <br>
+                                <br>This simulator is able to handle high Reynolds numbers due to Turbulence modeling.
+                                <br>Turbulence is handled by using the Smagorinsky sub-grid scale model.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="row">
-                <div class="col-12-fluid" id="prt-spacer"> </div>
-            </div>
-
-            <div class="row">
-                <div class="col-6 fade-in" id="prt-l2">
-                    <div class="float-end">
-                        <h2>Fluid Flow Simulator - 2D</h2>
-                        <br>
-                        <p>
-                            A 2D Flow simulator written in MATLAB, using the Lattice Boltzmann Method
-                            <br>instead of the traditional Navier-Stokes equations to simulate fluid flow.
+                <div class="row">
+                    <div class="col-12-fluid" id="prt-spacer"> </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 fade-in" id="prt-l2">
+                        <div class="float-end">
+                            <h2>Fluid Flow Simulator - 2D</h2>
                             <br>
-                            <br>The predecessor to the 3D LBM code.
-                            <br>This implementation can take a list of coordinates or an .stl file to
-                            <br>generate the simulation domain
-                            <br>
-                            <br>Note that a 2D simulation is less computationally expensive than 3D, 
-                            <br>which means a larger domain can be simulated.
-                        </p>
+                            <p>
+                                A 2D Flow simulator written in MATLAB, using the Lattice Boltzmann Method
+                                <br>instead of the traditional Navier-Stokes equations to simulate fluid flow.
+                                <br>
+                                <br>The predecessor to the 3D LBM code.
+                                <br>This implementation can take a list of coordinates or an .stl file to
+                                <br>generate the simulation domain
+                                <br>
+                                <br>Note that a 2D simulation is less computationally expensive than 3D, 
+                                <br>which means a larger domain can be simulated.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col me fade-in" id="prt-r2">
+                        <div class="float-start">
+                            <img src="/img/LBM-2D.gif" class="img-fluid" alt="Responsive image" >
+                        </div> 
                     </div>
                 </div>
-                <div class="col me fade-in" id="prt-r2">
-                    <div class="float-start">
-                        <img src="/img/LBM-2D.gif" class="img-fluid" alt="Responsive image" >
-                    </div> 
+                <div class="row">
+                    <div class="col-12-fluid" id="prt-spacer"> </div>
                 </div>
-            </div>
-
-            <div class="row">
-                <div class="col-12-fluid" id="prt-spacer"> </div>
-            </div>
-
-            <div class="row">
-                <div class="col me fade-in" id="prt-l1">
-                    <div class="float-end">
-                        <img src="/img/ABYB.PNG" class="img-fluid" alt="Responsive image" >
+                <div class="row">
+                    <div class="col me fade-in" id="prt-l1">
+                        <div class="float-end">
+                            <img src="/img/ABYB.PNG" class="img-fluid" alt="Responsive image" >
+                        </div>
                     </div>
-                </div>
-                <div class="col-6 fade-in" id="prt-r1">
-                    <div class="float-start">
-                        <h2>AI Telegram Chatbot</h2>
-                        <br>
-                        <p>
-                            An AI chatbot powered by OpenAI's GPT-3, written in Python.
-                            <br>The user can select different AI engines to generate better responses.
-                            <br>Each query and response uses up tokens.
-                            <br>AI token usage is calculated and tracked, and displayed at the request
-                            <br>of the user.
+                    <div class="col-6 fade-in" id="prt-r1">
+                        <div class="float-start">
+                            <h2>AI Telegram Chatbot</h2>
                             <br>
-                            <br>This AI chatbot is useful should the user finds themselves with
-                            <br>nobody to talk to. This AI chatbot will happily chat,
-                            <br>no questions asked.
-                            <br>                        
-                        </p>
+                            <p>
+                                An AI chatbot powered by OpenAI's GPT-3, written in Python.
+                                <br>The user can select different AI engines to generate better responses.
+                                <br>Each query and response uses up tokens.
+                                <br>AI token usage is calculated and tracked, and displayed at the request
+                                <br>of the user.
+                                <br>
+                                <br>This AI chatbot is useful should the user finds themselves with
+                                <br>nobody to talk to. This AI chatbot will happily chat,
+                                <br>no questions asked.
+                                <br>                        
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="row">
-                <div class="col-12-fluid" id="prt-spacer"> </div>
-            </div>
-
-         
-
-            <div class="row">
-                <div class="col-6 fade-in" id="prt-l2">
-                    <div class="float-end">
-                        <h2>Job Board Scraper</h2>
-                        <br>
-                        <p>
-                            An Indeed job posting scraper written in Python.
-                            <br>The user can specify the Job Title and Location in the Terminal.
-                            <br>The script will then send requests to Indeed using the Requests library
-                            <br>and parse the responses using Beautiful Soup to get the job details.
+                <div class="row">
+                    <div class="col-12-fluid" id="prt-spacer"> </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 fade-in" id="prt-l2">
+                        <div class="float-end">
+                            <h2>Job Board Scraper</h2>
                             <br>
-                            <br>The scraped job postings will then be exported to Excel
-                            <br>using the Pandas library.
-                        </p>
+                            <p>
+                                An Indeed job posting scraper written in Python.
+                                <br>The user can specify the Job Title and Location in the Terminal.
+                                <br>The script will then send requests to Indeed using the Requests library
+                                <br>and parse the responses using Beautiful Soup to get the job details.
+                                <br>
+                                <br>The scraped job postings will then be exported to Excel
+                                <br>using the Pandas library.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col me fade-in" id="prt-r2">
+                        <div class="float-start">
+                            <img src="/img/IE.PNG" class="img-fluid" alt="Responsive image" >
+                        </div> 
                     </div>
                 </div>
-                <div class="col me fade-in" id="prt-r2">
-                    <div class="float-start">
-                        <img src="/img/IE.PNG" class="img-fluid" alt="Responsive image" >
-                    </div> 
+    
+                <div class="row">
+                    <div class="col-12-fluid" id="prt-spacer"> </div>
                 </div>
-            </div>
-
-            <div class="row">
-                <div class="col-12-fluid" id="prt-spacer"> </div>
-            </div>
-            <div class="row">
-                <div class="col-12-fluid" id="prt-spacer"> </div>
-            </div>
+                <div class="row">
+                    <div class="col-12-fluid" id="prt-spacer"> </div>
+                </div>
+            </div>   
         </div>
-
-
         <div class="container-fluid">
-            <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="/img/uparrow.svg" class="img-fluid" alt="Responsive image"></button>
+            <div class="row">
+                <div class="col-12-fluid" id="spacer"> </div>
+            </div>
         </div>
-       
-
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12-fluid d-flex justify-content-center" id="footer">
@@ -296,9 +278,15 @@
                 </div>
             </div>
         </div>
-            
+        <div class="container-fluid">
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="/img/uparrow.svg" class="img-fluid" alt="Responsive image"></button>
+        </div>
 
-       <script src="js/script.js"></script>
-       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    </body>
+    </div>
+   
+
+    <script src="/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
 </html>
+

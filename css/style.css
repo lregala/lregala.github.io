@@ -1,6 +1,5 @@
 * {
     border-radius: 0 !important;
-    /* font-family: Georgia, serif!important; */
     font-family: 'Playfair Display', serif!important;
   }
 
@@ -12,7 +11,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap');
 
 
-  .btn:focus,.btn:active {
+.btn:focus,.btn:active {
     outline: none !important;
     box-shadow: none!important;
  }
@@ -31,39 +30,36 @@
 
 
 body {
-    background-color: #54626F;
-    background-image: url(/img/dscbg.jpg);
-    width: 100%;
-    /* height: 99vh; */
-    height: 100%;
-    /* height: calc(var(--vh, 1vh)*100); */
-    /* height: calc(100vh-calc(100vh - 100%)); */
-    /* position: fixed; */
-    background-attachment: fixed;
-    background-position: fixed;
-    /* position: absolute; */
-    background-position-x: 60%;
-    background-position-y: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow-x:hidden;
-    
+    font-size: 16px;
+    background-color: #A2ABB2;
 }
 
 
-#navmain {
-    background-color: rgba(255, 255, 255, 0.15);
+#bg{
+    background-image: url('/img/dscbg_col.jpg');
+
+    filter: contrast(120%);
+
+    background-position-x: 65%;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+
+    height: 100vh;
+    width: 100vw;
+
+}
+
+#navmain{
+    background-color: #a8b6c2;
     border-collapse: collapse;
     padding: 0; 
     padding-right: 20%;
     margin: 0;
     font-weight: light;
 
-
 }
-
-
-
 .nav-item {
     background-color: 495867;
     padding-top: 10%;
@@ -99,22 +95,23 @@ body {
     text-decoration: none
 }
 
-#jb {
-
-    background-color: rgba(255, 255, 255, 0.15);
-    color: #223843;
-    padding: 2%;
-    padding-left: 5%;
-    padding-bottom: 10%;
-    padding-top: 10%;
-    background-repeat: no-repeat;
-    background-position: center;
-    /* background-color: linear-gradient(to bottom, rgba(255,255,255,0.15), rgba(255,255,255,0)); */
-    /* box-shadow: 0px 0px 10px #fff; */
+#jb{
+    -webkit-backdrop-filter: saturate(5%) brightness(90%) contrast(350%);
+    -o-backdrop-filter: saturate(5%) brightness(90%) contrast(350%);
+    -moz-backdrop-filter: saturate(5%) brightness(90%) contrast(350%);
+    backdrop-filter: saturate(5%) brightness(90%) contrast(350%);
 }
 
+#jb-inner {
+    background-color: #6d7984cc;
+    color: #223843;
+    filter: brightness(1.35);
+    padding: 10%;
+    padding-bottom: 15%;
+}
 
 #jb h1{
+   
     padding-top: 3%;
     font-size: 8vh;
     font-weight:900;
@@ -123,6 +120,7 @@ body {
     opacity: 0;
     filter: blur(2px);
     animation: fade-in 1s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+   
 }
 
 #jb p{
@@ -135,55 +133,59 @@ body {
     animation: fade-in 1s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-@keyframes fade-in {
-100% {
-      opacity: 1;
-      filter: blur(0);
-    }
+#gap{
+    -webkit-backdrop-filter: saturate(5%) brightness(90%) contrast(350%);
+    -o-backdrop-filter: saturate(5%) brightness(90%) contrast(350%);
+    -moz-backdrop-filter: saturate(5%) brightness(90%) contrast(350%);
+    backdrop-filter: saturate(5%) brightness(90%) contrast(350%); 
 }
 
-#gap{
-    background-color: rgba(255, 255, 255, 0.15);
+
+#gap-inner{
+    background-color: #6d7984cc;
+    color: #223843;
+    filter: brightness(1.35);
+    padding: 10%;
+    padding-bottom: 20%;
 }
 
 #spacer{
-    padding: 30%;
+    padding: 30vh;
+}
+
+@keyframes fade-in {
+    100% {
+          opacity: 1;
+          filter: blur(0);
+        }
+}
+
+#abt{ 
+   padding-top: 5%;
+}
+
+#about{ 
+    -webkit-backdrop-filter: saturate(5%) brightness(90%) contrast(350%);
+    -o-backdrop-filter: saturate(5%) brightness(90%) contrast(350%);
+    -moz-backdrop-filter: saturate(5%) brightness(90%) contrast(350%);
+    backdrop-filter: saturate(5%) brightness(90%) contrast(350%);
+
+}
+
+
+#abt-inner {
     
-    background-image: url(/img/dscbg_col.jpg);
-    height: 30%; 
     border: none;
-
-    background-attachment: fixed;
-    background-position-x: 60%;
-    background-position-y: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow-x:hidden;
-}
-
-#abt{
-    padding: 3%;
-    background-image: url(/img/dscbg_col.jpg);
-    height: 30%; 
-    border: none;
+    /* background-color: rgba(34, 56, 67,0.5); */
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 100;
 
 
-    background-attachment: fixed;
-    background-position-x: 60%;
-    background-position-y: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow-x:hidden;
-}
 
-
-#prt-spacer{
-    padding: 3%
-}
-
-#flex_spacer{
-    padding-top: 7%;
-    padding-bottom: 7%;
+    background-color: #6d7984cc;
+    filter: brightness(1.35);
+    padding: 2%;
+    padding-bottom: 3%;
 }
 
 #socials{
@@ -251,29 +253,11 @@ body {
     display: none;  
   }
 
-
-#about{
-    border: none;
-    background-color: rgba(34, 56, 67,0.3);
-    color: #fff;;
-    font-weight: 100;
-    padding-bottom: 4%;
-}
-
-#portfolio{
-    background-color: rgba(34, 56, 67,0.3);
-    color: #fff;;
-    font-weight:100;
-  
-    padding-bottom: 4%;
-}
-
-
-
-
 #abt-l{
     padding-right: 4%;
     animation-delay: 2s;
+
+
 }
 #abt-r{
     padding-left: 4%;
@@ -282,20 +266,53 @@ body {
     padding-top: 5px;
 }
 
+
+#portfolio{ 
+    -webkit-backdrop-filter: saturate(5%) brightness(90%) contrast(350%);
+    -o-backdrop-filter: saturate(5%) brightness(90%) contrast(350%);
+    -moz-backdrop-filter: saturate(5%) brightness(90%) contrast(350%);
+    backdrop-filter: saturate(5%) brightness(90%) contrast(350%);
+    
+    border: none;
+    /* background-color: rgba(34, 56, 67,0.5); */
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 100;
+}
+
+#port-inner {
+    background-color: #6d7984cc;
+    filter: brightness(1.35);
+    padding: 1%;
+    padding-bottom: 3%;
+}
+
+
 #prt-l1{
+    padding-top:2%;
+    padding-bottom: 2%;
+
     padding-right: 4%;
     animation-delay: 2s;
 }
 #prt-r1{
+    padding-top:2%;
+    padding-bottom: 2%;
+
     padding-left: 4%;
     animation-delay: 2s;
 }
 
 #prt-l2{
+    padding-top:2%;
+    padding-bottom: 2%;
+
     padding-right: 2%;
     animation-delay: 2s;
 }
 #prt-r2{
+    padding-top:2%;
+    padding-bottom: 2%;
+
     padding-left: 4%;
     animation-delay: 2s;
 }
@@ -331,9 +348,11 @@ body {
     border-radius: 10px; 
     font-size: 12px; 
   }
-  
   #myBtn:hover {
     background-color: #D77A61; 
+  }
+  #myBtn img{
+    filter: brightness(100%);
   }
 
 
@@ -349,15 +368,28 @@ body {
     opacity: 1;
 }
 
+img {
 
+    -webkit-filter: brightness(70%);
+    -o-filter: brightness(70%);
+    -moz-filter: brightness(70%);
+    filter: brightness(70%);
+}
 
 
 #footer{
-    padding-top: 8%;
-    padding-bottom: 4%;
+    -webkit-backdrop-filter: saturate(5%) brightness(90%) contrast(350%);
+    -o-backdrop-filter: saturate(5%) brightness(90%) contrast(350%);
+    -moz-backdrop-filter: saturate(5%) brightness(90%) contrast(350%);
+    backdrop-filter: saturate(5%) brightness(90%) contrast(350%);
+    
+    border: none;
+    /* background-color: rgba(34, 56, 67,0.5); */
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 100;
+    padding: 2%;
+    padding-top: 7%;
+   
     background-color: rgba(34, 56, 67,0.7);
-    color: #fff;
     font-size: 16px;
-
-
 }
