@@ -1,4 +1,19 @@
-"use strict";
+ "use strict";
+ 
+
+//  window.addEventListener('resize', ()=>{
+//     let vh = window.innerHeight*0.01;
+//     document.documentElement.style.setProperty('--vh', `${vh}px`);
+//  });
+
+// function appHeight() {
+//     const doc = document.documentElement;
+//     doc.style.setProperty('--vh', (window.innerHeight*.01)+'px');
+
+// }
+
+// window.addEventListener('resize',appHeight);
+// appHeight;
 
 
 let mybutton = document.getElementById("myBtn"); //Get the button:
@@ -46,6 +61,7 @@ let mybutton = document.getElementById("myBtn"); //Get the button:
  appearOnScroll.observe(fader);
 });
 
+<<<<<<< HEAD
 
 const target = document.querySelector('.loader-wrapper');
 
@@ -54,3 +70,5 @@ target.addEventListener('load', () => target.style.opacity = '0');
 setTimeout(function(){
     target.style.display = 'none';
 }, 2000);
+=======
+>>>>>>> parent of 7a6234a (removed parallax)
