@@ -45,3 +45,12 @@ let mybutton = document.getElementById("myBtn"); //Get the button:
  faders.forEach(fader => {
  appearOnScroll.observe(fader);
 });
+
+
+const target = document.querySelector('.loader-wrapper');
+
+target.addEventListener('load', () => target.style.opacity = '0');
+// If you want to remove it from the page after the fadeout
+setTimeout(function(){
+    target.style.display = 'none';
+}, 2000);
