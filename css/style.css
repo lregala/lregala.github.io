@@ -116,7 +116,7 @@ body {
     filter: brightness(1.35);
     padding-top: 10%;
     padding: 2%;
-    padding-bottom: 10%;
+    padding-bottom: 25vh;
 }
 
 #jb h1{
@@ -142,6 +142,7 @@ body {
     animation: fade-in 1s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
+
 #gap{
     border-style: none;
     -webkit-backdrop-filter: saturate(5%) brightness(90%) contrast(350%);
@@ -156,7 +157,7 @@ body {
     color: #223843;
     filter: brightness(1.35);
     padding: 10%;
-    padding-bottom: 50%;
+    padding-bottom: 10vh;
 }
 
 #spacer{
@@ -171,7 +172,7 @@ body {
 }
 
 #abt{ 
-   padding-top: 5%;
+   padding-top: 6%;
 }
 
 #about{ 
@@ -193,7 +194,10 @@ body {
 
     background-color: #6d7984cc;
     filter: brightness(1.35);
-    padding: 5%;
+
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
     padding-bottom: 3%;
 }
 
@@ -286,12 +290,15 @@ body {
     /* background-color: rgba(34, 56, 67,0.5); */
     color: rgba(255, 255, 255, 0.6);
     font-weight: 100;
+    margin-top: 6%;
 }
 
 #port-inner {
     background-color: #6d7984cc;
     filter: brightness(1.35);
-    padding: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
     padding-bottom: 3%;
 }
 
@@ -315,7 +322,7 @@ body {
     padding-top:2%;
     padding-bottom: 2%;
 
-    padding-right: 2%;
+    padding-right: 4%;
     animation-delay: 2s;
 }
 #prt-r2{
@@ -327,7 +334,7 @@ body {
 }
 
 #sec-hdr {
-    padding: 3%;
+    padding: 2%;
     
 }
 #sub-ul {
