@@ -58,7 +58,7 @@ body {
 }
 
 #navmain{
-    background-color: #a8b6c2;
+    background-color: #91a2ae;
     border-collapse: collapse;
     padding: 0; 
     padding-right: 20%;
@@ -67,6 +67,7 @@ body {
     border-style: none;
 
 }
+
 .nav-item {
     background-color: 495867;
     padding-top: 10%;
@@ -111,7 +112,7 @@ body {
 }
 
 #jb-inner {
-    background-color: #6d7984cc;
+    background-color: rgba(88, 102, 114, 0.8);
     color: #223843;
     filter: brightness(1.35);
     padding-top: 10%;
@@ -153,7 +154,7 @@ body {
 
 
 #gap-inner{
-    background-color: #6d7984cc;
+    background-color: rgba(88, 102, 114, 0.8);
     color: #223843;
     filter: brightness(1.35);
     padding: 10%;
@@ -187,12 +188,12 @@ body {
 #abt-inner {
     
     border: none;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.7);
     font-weight: 100;
 
 
 
-    background-color: #6d7984cc;
+    background-color: rgba(88, 102, 114, 0.85);
     filter: brightness(1.35);
 
     padding-left: 5%;
@@ -288,13 +289,14 @@ body {
     
     border: none;
     /* background-color: rgba(34, 56, 67,0.5); */
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.7);
     font-weight: 100;
     margin-top: 6%;
+    
 }
 
 #port-inner {
-    background-color: #6d7984cc;
+    background-color: rgba(88, 102, 114, 0.85);
     filter: brightness(1.35);
     padding-left: 5%;
     padding-right: 5%;
@@ -302,18 +304,61 @@ body {
     padding-bottom: 3%;
 }
 
+.port-thumb{
+    padding: 2%;
+    /* border-style: solid; */
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.port-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin-bottom: 2%;
+}
+
+#p1:hover{
+    content: url('/img/port-img/LBM2d_square.gif');
+}
+
+#p2:hover{
+    content: url('/img/port-img/LBM3d_square-6x.gif');
+}
+
+#p3:hover{
+    content: url('/img/port-img/metronome_square.gif');
+}
+
+#p4:hover{
+    content: url('/img/port-img/tg-bot.png');
+}
+#p5:hover{
+    content: url('/img/port-img/indeed-logo.png');
+}
+
+#p6:hover{
+    content: url('/img/port-img/LRlogo.png');
+}
+
+
+
 
 #prt-l1{
     padding-top:2%;
     padding-bottom: 2%;
-
-    padding-right: 4%;
+    padding-left: 5%;
+    padding-right: 5%;
+    
     animation-delay: 2s;
+
+    
 }
 #prt-r1{
     padding-top:2%;
     padding-bottom: 2%;
-
+    
     padding-left: 4%;
     animation-delay: 2s;
 }
@@ -321,16 +366,22 @@ body {
 #prt-l2{
     padding-top:2%;
     padding-bottom: 2%;
-
+    padding-left: 4%;
     padding-right: 4%;
     animation-delay: 2s;
+    
 }
 #prt-r2{
     padding-top:2%;
     padding-bottom: 2%;
 
     padding-left: 4%;
+    padding-right: 4%;
     animation-delay: 2s;
+}
+
+#prt-spacer{
+    padding: 2%;
 }
 
 #sec-hdr {
@@ -376,7 +427,6 @@ body {
 .fade-in {
     opacity: 0;
     transition: opacity 500ms ease-in;
-
 }
 
 
@@ -385,7 +435,6 @@ body {
 }
 
 img {
-
     -webkit-filter: brightness(70%);
     -o-filter: brightness(70%);
     -moz-filter: brightness(70%);
@@ -406,6 +455,59 @@ img {
     padding: 2%;
     padding-top: 7%;
    
-    background-color: rgba(34, 56, 67,0.7);
+    background-color: rgba(34, 56, 67,0.85);
     font-size: 16px;
 }
+
+
+/* Subpages */
+#subnavmain{
+    background-color: #6c818b;
+    border-collapse: collapse;
+    padding: 0; 
+    padding-right: 27vw;
+    margin: 0;
+    font-weight: light;
+    border-style: none;
+}
+
+#subportfolio{ 
+    -webkit-backdrop-filter: saturate(5%) brightness(90%) contrast(350%);
+    -o-backdrop-filter: saturate(5%) brightness(90%) contrast(350%);
+    -moz-backdrop-filter: saturate(5%) brightness(90%) contrast(350%);
+    backdrop-filter: saturate(5%) brightness(90%) contrast(350%);
+    
+    border: none;
+    /* background-color: rgba(34, 56, 67,0.5); */
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 100;
+}
+
+#subport-inner {
+    background-color: rgba(34, 56, 67,0.7);
+    filter: brightness(1.35);
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
+    padding-bottom: 3%;
+    justify-content: center;
+    align-items:center;
+}
+
+#subgap{
+    border-style: none;
+    -webkit-backdrop-filter: saturate(5%) brightness(90%) contrast(350%);
+    -o-backdrop-filter: saturate(5%) brightness(90%) contrast(350%);
+    -moz-backdrop-filter: saturate(5%) brightness(90%) contrast(350%);
+    backdrop-filter: saturate(5%) brightness(90%) contrast(350%); 
+}
+
+
+#subgap-inner{
+    background-color: rgba(34, 56, 67,0.7);
+    color: #223843;
+    filter: brightness(1.35);
+    padding: 5%;
+    padding-bottom: 12vh;
+}
+

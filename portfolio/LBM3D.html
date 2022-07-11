@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0,maximum-scale=1.0"/>
+    <title>Leo R - Portfolio/LBM-3D</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon.png">
+</head>
+<body>
+    <div class="container-fluid" id="bg"> </div>
+    <div class="content">
+        <nav class="navbar navbar-expand-md navbar-dark" id = "subnavmain">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navmenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item" onclick="location.href='/index.html#navmain';">
+                            <a href="/index.html#navmain" class="nav_link">Home</a>
+                        </li>
+                        <li class="nav-item" onclick="location.href='/index.html#abt';">
+                            <a href="/index.html#abt" class="nav_link">About</a>
+                        </li>
+                        <li class="nav-item" onclick="location.href='/index.html#portfolio';">
+                            <a href="/index.html#portfolio" class="nav_link">Portfolio</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid" id="subportfolio">
+            <div class="row" id="subport-inner">
+                <div class="row align-items center" id="sec-hdr">
+                    <div class="container fade-in">
+                        <div class="col d-flex justify-content-center">
+                            <h1><b>Lattice Boltzmann Method</b></h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12-fluid" id="prt-spacer"> </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 me fade-in" id="prt-l1">
+                        
+                            <img src="/img/LBM-3D-180.gif" class="img-fluid">
+                        
+                        
+                    </div>
+                    <div class="col-lg-6 fade-in" id="prt-r1">
+                        
+                            <h2>Fluid Flow Simulator - 3D</h2>
+                            <br>
+                            <p>
+                                A 3D Flow simulator written in Python, using the Lattice Boltzmann Method
+                                <br>instead of the traditional Navier-Stokes equations to simulate fluid flow.
+                                <br>
+                                <br>The animation on the left is a simulation of a free jet flowing into a box-shaped region.
+                                <br>A snapshot of the velocity field is captured every nth time-steps to produce this animation.
+                                <br>The snapshots are taken along a planar slice of the 3D Domain.
+                                <br>
+                                <br>This simulator is able to handle high Reynolds numbers due to Turbulence modeling.
+                                <br>Turbulence is handled by using the Smagorinsky sub-grid scale model.
+                            </p>
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12-fluid" id="prt-spacer"> </div>
+                </div>
+                <div class="row">
+                    <div class="col-12-fluid" id="prt-spacer"> </div>
+                </div>
+                <div class="row">
+                    <div class="col-12-fluid" id="prt-spacer"> </div>
+                </div>
+            </div>   
+        </div>
+        <div class="container-fluid" id="subgap">
+            <div class="row" id="subgap-inner">
+                <div class="col-lg-6" id="flex_spacer"><p><br></p></div>
+                <div class="col-lg-6" id="flex_spacer"><p><br></p></div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12-fluid d-flex justify-content-center" id="footer">
+                    <br>
+                    © 2022 L. Regala. All Rights Reserved.
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="/img/uparrow.svg" class="img-fluid" alt="Responsive image"></button>
+        </div>
+
+    </div>
+   
+    <script src="https://kit.fontawesome.com/8e663f6748.js" crossorigin="anonymous"></script>
+    <script src="/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

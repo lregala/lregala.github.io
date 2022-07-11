@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon.png">
 </head>
 <body>
     <div class="container-fluid" id="bg"> </div>
@@ -148,115 +148,75 @@
                 <div class="row">
                     <div class="col-12-fluid" id="prt-spacer"> </div>
                 </div>
-                <div class="row">
-                    <div class="col me fade-in" id="prt-l1">
-                        <div class="float-end">
-                            <img src="/img/LBM-3D.gif" class="img-fluid">
-                        </div>
-                        
-                    </div>
-                    <div class="col-6 fade-in" id="prt-r1">
-                        <div class="float-start">
-                            <h2>Fluid Flow Simulator - 3D</h2>
-                            <br>
-                            <p>
-                                A 3D Flow simulator written in Python, using the Lattice Boltzmann Method
-                                <br>instead of the traditional Navier-Stokes equations to simulate fluid flow.
-                                <br>
-                                <br>The animation on the left is a simulation of a free jet flowing into a box-shaped region.
-                                <br>A snapshot of the velocity field is captured every nth time-steps to produce this animation.
-                                <br>The snapshots are taken along a planar slice of the 3D Domain.
-                                <br>
-                                <br>This simulator is able to handle high Reynolds numbers due to Turbulence modeling.
-                                <br>Turbulence is handled by using the Smagorinsky sub-grid scale model.
-                            </p>
+                <div class="row fade-in">
+                    <div class="col-sm d-flex justify-content-center"> </div>
+                    
+                    <div class="col-sm d-flex justify-content-center">
+                        <div class="port-wrapper" onclick="location.href='/portfolio/LBM2D.html';">
+                            <img class="port-thumb" src="/img/port-img/frame119_2d.png" id="p1">
+                            <h6>2D Flow Simulator</h6>
                         </div>
                     </div>
+
+                    <div class="col-sm d-flex justify-content-center"></div>
+
+                    <div class="col-sm d-flex justify-content-center">
+                        <div class="port-wrapper" onclick="location.href='/portfolio/LBM3D.html';">
+                            <img class="port-thumb" src="/img/port-img/frame111_3d.png" id="p2">
+                            <h6>3D Flow Simulator</h6>
+                        </div>
+                    </div>
+
+                    <div class="col-sm d-flex justify-content-center"></div>
+
+                    <div class="col-sm d-flex justify-content-center">
+                        <div class="port-wrapper" onclick="location.href = 'https://lregala.github.io/metronome/'">
+                            <img class="port-thumb" src="/img/port-img/frame3-metro.png" id="p3">
+                            <h6>Metronome</h6>
+                        </div>
+                    </div>
+
+                    <div class="col-sm d-flex justify-content-center"> </div>
                 </div>
                 <div class="row">
                     <div class="col-12-fluid" id="prt-spacer"> </div>
                 </div>
-                <div class="row">
-                    <div class="col-6 fade-in" id="prt-l2">
-                        <div class="float-end">
-                            <h2>Fluid Flow Simulator - 2D</h2>
-                            <br>
-                            <p>
-                                A 2D Flow simulator written in MATLAB, using the Lattice Boltzmann Method
-                                <br>instead of the traditional Navier-Stokes equations to simulate fluid flow.
-                                <br>
-                                <br>The predecessor to the 3D LBM code.
-                                <br>This implementation can take a list of coordinates or an .stl file to
-                                <br>generate the simulation domain
-                                <br>
-                                <br>Note that a 2D simulation is less computationally expensive than 3D, 
-                                <br>which means a larger domain can be simulated.
-                            </p>
+                <div class="row fade-in">
+                    <div class="col-sm d-flex justify-content-center"> </div>
+                    
+                    <div class="col-sm d-flex justify-content-center">
+                        <div class="port-wrapper" onclick="location.href = 'https://github.com/lregala/AllByMyselfBot'">
+                            <img class="port-thumb" src="/img/port-img/frame-tg-bot-180px.png" id="p4">
+                            <h6>AI Telegram Chatbot</h6>
                         </div>
                     </div>
-                    <div class="col me fade-in" id="prt-r2">
-                        <div class="float-start">
-                            <img src="/img/LBM-2D.gif" class="img-fluid" alt="Responsive image" >
-                        </div> 
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12-fluid" id="prt-spacer"> </div>
-                </div>
-                <div class="row">
-                    <div class="col me fade-in" id="prt-l1">
-                        <div class="float-end">
-                            <img src="/img/ABYB.PNG" class="img-fluid" alt="Responsive image" >
+
+                    <div class="col-sm d-flex justify-content-center"></div>
+
+                    <div class="col-sm d-flex justify-content-center">
+                        <div class="port-wrapper" onclick="location.href = 'https://github.com/lregala/IndeedExpress'">
+                            <img class="port-thumb" src="/img/port-img/frame-indeed-logo.png" id="p5">
+                            <h6>Job Board Scraper</h6>
                         </div>
                     </div>
-                    <div class="col-6 fade-in" id="prt-r1">
-                        <div class="float-start">
-                            <h2>AI Telegram Chatbot</h2>
-                            <br>
-                            <p>
-                                An AI chatbot powered by OpenAI's GPT-3, written in Python.
-                                <br>The user can select different AI engines to generate better responses.
-                                <br>Each query and response uses up tokens.
-                                <br>AI token usage is calculated and tracked, and displayed at the request
-                                <br>of the user.
-                                <br>
-                                <br>This AI chatbot is useful should the user finds themselves with
-                                <br>nobody to talk to. This AI chatbot will happily chat,
-                                <br>no questions asked.
-                                <br>                        
-                            </p>
+
+                    <div class="col-sm d-flex justify-content-center"></div>
+
+                    <div class="col-sm d-flex justify-content-center">
+                        <div class="port-wrapper" onclick="location.href = 'https://github.com/lregala/lregala.github.io'">
+                            <img class="port-thumb" src="/img/port-img/frame_LRlogo.png" id="p6">
+                            <h6>LRegala.github.io</h6>
                         </div>
                     </div>
+
+                    <div class="col-sm d-flex justify-content-center"> </div>
                 </div>
+
                 <div class="row">
-                    <div class="col-12-fluid" id="prt-spacer"> </div>
+                    <div class="col-6-fluid" id="prt-spacer"> </div>
+                    <div class="col-6-fluid" id="prt-spacer"> </div>
                 </div>
-                <div class="row">
-                    <div class="col-6 fade-in" id="prt-l2">
-                        <div class="float-end">
-                            <h2>Job Board Scraper</h2>
-                            <br>
-                            <p>
-                                An Indeed job posting scraper written in Python.
-                                <br>The user can specify the Job Title and Location in the Terminal.
-                                <br>The script will then send requests to Indeed using the Requests library
-                                <br>and parse the responses using Beautiful Soup to get the job details.
-                                <br>
-                                <br>The scraped job postings will then be exported to Excel
-                                <br>using the Pandas library.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col me fade-in" id="prt-r2">
-                        <div class="float-start">
-                            <img src="/img/IE.PNG" class="img-fluid" alt="Responsive image" >
-                        </div> 
-                    </div>
-                </div>
-    
-                <div class="row">
-                    <div class="col-12-fluid" id="prt-spacer"> </div>
-                </div>
+            
                 <div class="row">
                     <div class="col-12-fluid" id="prt-spacer"> </div>
                 </div>
