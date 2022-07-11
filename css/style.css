@@ -161,6 +161,24 @@ body {
     padding-bottom: 10vh;
 }
 
+
+#h-gap{
+    border-style: none;
+    -webkit-backdrop-filter: saturate(5%) brightness(90%) contrast(350%);
+    -o-backdrop-filter: saturate(5%) brightness(90%) contrast(350%);
+    -moz-backdrop-filter: saturate(5%) brightness(90%) contrast(350%);
+    backdrop-filter: saturate(5%) brightness(90%) contrast(350%); 
+}
+
+
+#h-gap-inner{
+    background-color: rgba(88, 102, 114, 0.8);
+    color: #223843;
+    filter: brightness(1.35);
+    padding: 2%;
+    padding-bottom: 5vw;
+}
+
 #spacer{
     padding: 30vh;
 }
@@ -172,9 +190,9 @@ body {
         }
 }
 
-#abt{ 
-   padding-top: 6%;
-}
+/* #abt{ 
+   padding-top: 1.5vw;
+} */
 
 #about{ 
     -webkit-backdrop-filter: saturate(5%) brightness(90%) contrast(350%);
@@ -193,7 +211,7 @@ body {
 
 
 
-    background-color: rgba(88, 102, 114, 0.85);
+    background-color: rgba(88, 102, 114, 0.8);
     filter: brightness(1.35);
 
     padding-left: 5%;
@@ -292,6 +310,7 @@ body {
     color: rgba(255, 255, 255, 0.7);
     font-weight: 100;
     margin-top: 6%;
+
     
 }
 
