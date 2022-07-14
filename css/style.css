@@ -479,7 +479,7 @@ img {
 
 /* Subpages */
 #subnavmain{
-    background-color: #6c818b;
+    background-color: #39525e;
     border-collapse: collapse;
     padding: 0; 
     padding-right: 27vw;
@@ -501,8 +501,8 @@ img {
 }
 
 #subport-inner {
-    background-color: rgba(34, 56, 67,0.7);
-    filter: brightness(1.35);
+    background-color: rgba(34, 56, 67,0.92);
+    filter: brightness(1.2);
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 1%;
@@ -521,9 +521,9 @@ img {
 
 
 #subgap-inner{
-    background-color: rgba(34, 56, 67,0.7);
+    background-color: rgba(34, 56, 67,0.92);
     color: #223843;
-    filter: brightness(1.35);
+    filter: brightness(1.2);
     padding: 5%;
     padding-bottom: 12vh;
 }
