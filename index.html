@@ -34,8 +34,8 @@
         </nav>
         <div class="container-fluid jb" id="jb">
             <div class="row jb-inner">
-                <div class="col-sm-3"></div>
-                <div class="col-sm-9">
+                <div class="col-lg-3 col-md-2 col-sm-1"></div>
+                <div class="col-lg-9 col-md-8 col-sm-8">
                     <h1>Leo Regala</h1>
                     <p class="lead">Artist | Developer</p>               
                     <p class="lead">
@@ -47,12 +47,12 @@
         </div>
         <div class="container-fluid gap">
             <div class="row" id="gap-inner">
-                <div class="col-lg-2" id="flex_spacer"><p><br></p></div>
-                <div class="col-lg-2" id="flex_spacer"><p><br></p></div>
-                <div class="col-lg-2" id="flex_spacer"><p><br></p></div>
-                <div class="col-lg-2" id="flex_spacer"><p><br></p></div>
-                <div class="col-lg-2" id="flex_spacer"><p><br></p></div>
-                <div class="col-lg-2" id="flex_spacer"><p><br></p></div>
+                <div class="col-lg-2" id="flex_spacer"><p><br><br><br></p></div>
+                <div class="col-lg-2" id="flex_spacer"><p><br><br><br></p></div>
+                <div class="col-lg-2 d-none d-sm-block" id="flex_spacer"><p><br><br><br></p></div>
+                <div class="col-lg-2 d-none d-md-block" id="flex_spacer"><p><br><br><br></p></div>
+                <div class="col-lg-2 d-none d-md-block" id="flex_spacer"><p><br><br><br></p></div>
+                <div class="col-lg-2 d-none d-md-block" id="flex_spacer"><p><br><br><br></p></div>
             </div>
         </div>
         <div class="container-fluid">
@@ -69,13 +69,13 @@
                         </div>
                     </div>
                     <div class="row fade-in">
-                        <div class="col me" id="abt-l">
+                        <div class="col-sm-6 me" id="abt-l">
                             <div class="float-end">
                                 <img src="/img/side7.jpg" class="img-fluid" alt="Responsive image" id="profile-pic">
                             </div>
                             
                         </div>
-                        <div class="col" id="abt-r">
+                        <div class="col-sm-6" id="abt-r">
                             <div class="float-start">
                                 <p>
                                     Hi, I'm Leo, a Canadian-based self-taught developer.
@@ -133,12 +133,12 @@
         </div>
         <div class="container-fluid" id="h-gap">
             <div class="row" id="h-gap-inner">
-                <div class="col-lg-2" id="flex_spacer"><p><br></p></div>
-                <div class="col-lg-2" id="flex_spacer"><p><br></p></div>
-                <div class="col-lg-2" id="flex_spacer"><p><br></p></div>
-                <div class="col-lg-2" id="flex_spacer"><p><br></p></div>
-                <div class="col-lg-2" id="flex_spacer"><p><br></p></div>
-                <div class="col-lg-2" id="flex_spacer"><p><br></p></div>
+                <div class="col-xl-2 d-none d-xl-block" id="flex_spacer"><p><br><br></p></div>
+                <div class="col-xl-2 d-none d-xl-block" id="flex_spacer"><p><br><br></p></div>
+                <div class="col-xl-2 d-none d-xl-block" id="flex_spacer"><p><br><br></p></div>
+                <div class="col-xl-2 d-none d-xl-block" id="flex_spacer"><p><br><br></p></div>
+                <div class="col-xl-2 d-none d-xl-block" id="flex_spacer"><p><br><br></p></div>
+                <div class="col-xl-2 d-none d-xl-block" id="flex_spacer"><p><br><br></p></div>
             </div>
         </div>
         <div class="container-fluid">
@@ -149,7 +149,7 @@
         <div class="container-fluid" id="portfolio">
             <div class="row" id="port-inner">
                 <div class="row align-items center" id="sec-hdr">
-                    <div class="container fade-in">
+                    <div class="container-fluid fade-in">
                         <div class="col d-flex justify-content-center">
                             <h1><b>Portfolio</b></h1>
                         </div>
@@ -158,68 +158,53 @@
                 <div class="row align-items center">
                     <div class="col-12-fluid" id="prt-spacer"> </div>
                 </div>
-                <div class="row align-items center fade-in">
-                    <div class="col-sm d-flex justify-content-center"> </div>
-                    
-                    <div class="col-sm d-flex justify-content-center">
+
+                <div class="row">
+                    <!-- align-items center  -->
+                    <div class="col-lg-4 col-md-6 d-flex justify-content-center fade-in">
                         <div class="port-wrapper" onclick="location.href='/portfolio/LBM2D.html';">
                             <img class="port-thumb" src="/img/port-img/frame119_2d.png" id="p1">
                             <h6>2D Flow Simulator</h6>
                         </div>
                     </div>
 
-                    <div class="col-sm d-flex justify-content-center"></div>
-
-                    <div class="col-sm d-flex justify-content-center">
+                    <div class="col-lg-4 col-md-6 d-flex justify-content-center fade-in">
                         <div class="port-wrapper" onclick="location.href='/portfolio/LBM3D.html';">
                             <img class="port-thumb" src="/img/port-img/frame111_3d.png" id="p2">
                             <h6>3D Flow Simulator</h6>
                         </div>
                     </div>
 
-                    <div class="col-sm d-flex justify-content-center"></div>
-
-                    <div class="col-sm d-flex justify-content-center">
+                    <div class="col-lg-4 col-md-6 d-flex justify-content-center fade-in">
                         <div class="port-wrapper" onclick="location.href = 'https://lregala.github.io/metronome/'">
                             <img class="port-thumb" src="/img/port-img/frame3-metro.png" id="p3">
                             <h6>Metronome</h6>
                         </div>
                     </div>
 
-                    <div class="col-sm d-flex justify-content-center"> </div>
-                </div>
-                <div class="row">
-                    <div class="col-12-fluid" id="prt-spacer"> </div>
-                </div>
-                <div class="row fade-in">
-                    <div class="col-sm d-flex justify-content-center"> </div>
-                    
-                    <div class="col-sm d-flex justify-content-center">
+                    <div class="col-lg-4 col-md-6 d-flex justify-content-center fade-in">
                         <div class="port-wrapper" onclick="location.href = 'https://github.com/lregala/AllByMyselfBot'">
                             <img class="port-thumb" src="/img/port-img/frame-tg-bot-180px.png" id="p4">
                             <h6>AI Telegram Chatbot</h6>
                         </div>
                     </div>
 
-                    <div class="col-sm d-flex justify-content-center"></div>
 
-                    <div class="col-sm d-flex justify-content-center">
+                    <div class="col-lg-4 col-md-6 d-flex justify-content-center fade-in">
                         <div class="port-wrapper" onclick="location.href = 'https://github.com/lregala/IndeedExpress'">
                             <img class="port-thumb" src="/img/port-img/frame-indeed-logo.png" id="p5">
                             <h6>Job Board Scraper</h6>
                         </div>
                     </div>
 
-                    <div class="col-sm d-flex justify-content-center"></div>
 
-                    <div class="col-sm d-flex justify-content-center">
+                    <div class="col-lg-4 col-md-6 d-flex justify-content-center fade-in">
                         <div class="port-wrapper" onclick="location.href = 'https://github.com/lregala/lregala.github.io'">
                             <img class="port-thumb" src="/img/port-img/frame_LRlogo.png" id="p6">
                             <h6>LRegala.github.io</h6>
                         </div>
                     </div>
 
-                    <div class="col-sm d-flex justify-content-center"> </div>
                 </div>
 
                 <div class="row">
