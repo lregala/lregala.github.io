@@ -218,12 +218,18 @@ body {
     padding-bottom: 3%;
 }
 
+
+#profile-pic {
+    /* height: 34rem;
+    width: 100%; */
+}
+
 #socials{
     
     height: auto;
     max-width: 100%;
     vertical-align: middle;
-    
+    padding-top: 5.15rem;
 }
 
 
@@ -293,7 +299,7 @@ body {
     padding-left: 4%;
     padding-right: 0;
     animation-delay: 2s;
-    padding-top: 5px;
+    /* padding-top: 5px; */
 }
 
 
