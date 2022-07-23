@@ -327,7 +327,7 @@ body {
 
 @media only screen and (max-width: 576px) and (orientation: portrait){
     .jb{
-        padding: 40% 10% 65%;
+        padding: 30% 10% 75%;
         text-align: center;
     }
 
