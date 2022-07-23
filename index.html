@@ -1,237 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0,maximum-scale=1.0"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leo R - Artist | Developer</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/8e663f6748.js" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon.png">
 </head>
+
 <body>
-    <div class="container-fluid bg"> </div>
-    <div class="content">
-        <nav class="navbar navbar-expand-md navbar-dark" id = "navmain">
-            <div class="container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navmenu">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item" onclick="document.getElementById('abt').scrollIntoView()">
-                            <a href="#abt" class="nav_link">About</a>
-                        </li>
-                        <li class="nav-item" onclick="document.getElementById('portfolio').scrollIntoView()">
-                            <a href="#portfolio" class="nav_link">Portfolio</a>
-                        </li>
-                        
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div class="container-fluid jb" id="jb">
-            <div class="row jb-inner">
-                <div class="col-lg-3 col-md-2 col-sm-1"></div>
-                <div class="col-lg-9 col-md-8 col-sm-8">
-                    <h1>Leo Regala</h1>
-                    <p class="lead">Artist | Developer</p>               
-                    <p class="lead">
-                        <a class="btn btn-primary btn-lg" href="#portfolio" role="button" id="btn_explore">Explore</a>
-                    </p>
-                    <p id="screensize"></p>
-                </div> 
-            </div>    
-        </div>
-        <div class="container-fluid gap">
-            <div class="row" id="gap-inner">
-                <div class="col-lg-2" id="flex_spacer"><p><br><br><br></p></div>
-                <div class="col-lg-2" id="flex_spacer"><p><br><br><br></p></div>
-                <div class="col-lg-2 d-none d-sm-block" id="flex_spacer"><p><br><br><br></p></div>
-                <div class="col-lg-2 d-none d-md-block" id="flex_spacer"><p><br><br><br></p></div>
-                <div class="col-lg-2 d-none d-md-block" id="flex_spacer"><p><br><br><br></p></div>
-                <div class="col-lg-2 d-none d-md-block" id="flex_spacer"><p><br><br><br></p></div>
+    <div class="container-fluid bg"></div>
+    <div class="content container-fluid">
+        <div class="navbar navbar-expand-md">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12-fluid" id="spacer"> </div>
+
+        <div class="row-fluid jb">
+            <div class="col jumbotron">
+                <h1 id="home-title">Leo Regala</h1>
+                <p id="home-desc">Artist | Developer</p>
+                <button class="btn btn-primary btn-lg">See More</button>
+
             </div>
+
         </div>
-        <div class="container-fluid" id="abt">
-            <div class="row" id="about">
-                <div class="container" id="abt-inner">
-                    <div class="row align-items center fade-in" id="sec-hdr">
-                        <div class="col d-flex justify-content-center">
-                            <h1><b>About</b></h1>
+        <div class="row-fluid" id="about">
+            <div class="card mb-3 abt">
+                <div class="row g-0">
+                    <div class="col-md-4 col-sm-3 bio-img">
+                        <img src="/img/side8.jpg" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-md-8 col-sm-9">
+                        <div class="card-body">
+                            <h2 class="card-title">About</h2>
+                            <hr>
+                            <p class="card-text bio">
+                                Hi, I'm Leo, a Canadian self-taught developer.
+                                <br>As an artist, I like to experiment with different mediums.
+                                <br>I see web development as another canvas to channel my creative energy.
+                                I love to design and create all sorts of things, from art to lines of code.
+
+                                <br><br>While I am relatively new to this space,
+                                I bring with me 25 years of experience making amazing artworks.
+                                This page serves as an ever-growing gallery of my creations.
+
+                            </p>
                         </div>
                     </div>
-                    <div class="row fade-in">
-                        <div class="col-sm-6 me" id="abt-l">
-                            <div class="float-end">
-                                <img src="/img/side7.jpg" class="img-fluid" alt="Responsive image" id="profile-pic">
+                </div>
+                <!-- <div class="row g-0 accord">
+                    <div class="accordion accordion-flush" id="accordionFlush">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                              Skills
+                            </button>
+                          </h2>
+                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlush">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <ul>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>JavaScript</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-6">
+                                        <ul>
+                                            <li>React</li>
+                                            <li>Express</li>
+                                            <li>Node.js</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-                            
+                          </div>
                         </div>
-                        <div class="col-sm-6" id="abt-r">
-                            <div class="float-start">
-                                <p>
-                                    Hi, I'm Leo, a Canadian-based self-taught developer.
-                                    <br>As an artist for many years, I like to experiment with different mediums.
-                                    <br>I see web development as another canvas to channel my creative energy.
-                                    <br>I love to design and create all sorts of things, from art to lines of code.
-                                    <br>
-                                    <br>While I am relatively new to this space, 
-                                    <br>I bring with me 25 years of experience making amazing artworks.
-                                    <br>This page is an ever-growing gallery of my creations. 
-                                    <br>Feel free to have a look around!
-                                </p>
-                                <h4>Technical Experience:</h4>
-                                <ul  id="sub-ul">
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>JavaScript</li>
-                                    <li>Python</li>
-                                    <li>VBA</li>
-                                    <li>Bootstrap</li>
-                                </ul>
-                                <div class="col-sm d-flex justify-content-left" id="socials">
-                                    <ul id="iconlist">
-                                        <li>
-                                            <a href="https://github.com/lregala" id="lgh">
-                                                <img src="/img/icons/gh-square48.png" class="img-fluid"   alt="Github logo" >
-                                                <img src="/img/icons/gh-square48_hl.png" class="img-fluid"   alt="Github logo" >
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.linkedin.com/in/lregala/" id="lli">
-                                                <img src="/img/icons/li-square48.png" class="img-fluid"   alt="Linkedin logo" >
-                                                <img src="/img/icons/li-square48-hl.png" class="img-fluid"   alt="Linkedin logo" >
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.instagram.com/leoregala/?hl=en" id="lig">
-                                                <img src="/img/icons/ig-square48.png" class="img-fluid"  alt="Instagram logo">
-                                                <img src="/img/icons/ig-square48-hl.png" class="img-fluid"  alt="Instagram logo">
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href = "mailto: lregala.b@gmail.com" id="lml">
-                                                <img src="/img/icons/ml-square48.png" class="img-fluid"   alt="Mail logo">
-                                                <img src="/img/icons/ml-square48-hl.png" class="img-fluid"   alt="Mail logo">
-                                            </a>
-                                        </li>
-                                    </ul>
+                        
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+
+        <div class="row-fluid portfolio" id="portfolio">
+            <div class="col prt">
+                <div class="row">
+                    <h2>Portfolio</h2>
+                    <hr>
+                </div>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    
+                    <div class="col-md-6">
+                        <div class="card w-60 h-100 prtcard" id="pc1" onclick="location.href = 'https://github.com/lregala/'">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <img src="/img/port-img/frame119_2d.png" class="card-img-top" alt="..." id="pi1">
+                                </div>
+                                <div class="col-sm-9">
+                                    <div class="card-body">
+                                        <h5 class="card-title">2D Fluid Simulator</h5>
+                                        <hr>
+                                        <p class="card-text">
+                                            A 2D Flow Simulator using the D2Q9 Lattice Boltzmann Method written in
+                                            MATLAB
+                                        </p>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <div class="col-md-6">
+                        <div class="card w-60 h-100 prtcard" id="pc2" onclick="location.href = 'https://github.com/lregala/'">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <img src="/img/port-img/frame111_3d.png" class="card-img-top" alt="..." id="pi2">
+                                </div>
+                                <div class="col-sm-9">
+                                    <div class="card-body">
+                                        <h5 class="card-title">3D Fluid Simulator</h5>
+                                        <hr>
+                                        <p class="card-text"> 
+                                            A 3D Flow Simulator using the D3Q19 Lattice Boltzmann Method written in
+                                            Python
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card w-60 h-100 prtcard" id="pc3" onclick="location.href = 'https://lregala.github.io/metronome/'">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <img src="/img/port-img/frame3-metro.png" class="card-img-top" alt="..." id="pi3">
+                                </div>
+                                <div class="col-sm-9">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Metronome</h5>
+                                        <hr>
+                                        <p class="card-text">
+                                            A metronome written in Javascript
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card w-60 h-100 prtcard" id="pc4" onclick="location.href = 'https://github.com/lregala/AllByMyselfBot'">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <img src="/img/port-img/frame-tg-bot-180px.png" class="card-img-top" alt="..." id="pi4">
+                                </div>
+                                <div class="col-sm-9">
+                                    <div class="card-body">
+                                        <h5 class="card-title">AI Chatbot</h5>
+                                        <hr>
+                                        <p class="card-text">
+                                            A Telegram Chatbot powered by OpenAI's GPT-3 written in Python
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card w-60 h-100 prtcard" id="pc5" onclick="location.href = 'https://github.com/lregala/IndeedExpress'">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <img src="/img/port-img/frame-indeed-logo.png" class="card-img-top" alt="..." id="pi5">
+                                </div>
+                                <div class="col-sm-9">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Job Board Scraper</h5>
+                                        <hr>
+                                        <p class="card-text">
+                                            A Python script to scrape job postings on Indeed
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card w-60 h-100 prtcard" id="pc6" onclick="location.href = 'https://github.com/lregala/lregala.github.io'">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <img src="/img/port-img/frame_LRlogo.png" class="card-img-top" alt="..." id="pi6">
+                                </div>
+                                <div class="col-sm-9">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Lregala.github.io</h5>
+                                        <hr>
+                                        <p class="card-text">
+                                            Personal Website
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
-            </div>    
+            </div>
+
         </div>
-        <div class="container-fluid" id="h-gap">
-            <div class="row" id="h-gap-inner">
-                <div class="col-xl-2 d-none d-xl-block" id="flex_spacer"><p><br><br></p></div>
-                <div class="col-xl-2 d-none d-xl-block" id="flex_spacer"><p><br><br></p></div>
-                <div class="col-xl-2 d-none d-xl-block" id="flex_spacer"><p><br><br></p></div>
-                <div class="col-xl-2 d-none d-xl-block" id="flex_spacer"><p><br><br></p></div>
-                <div class="col-xl-2 d-none d-xl-block" id="flex_spacer"><p><br><br></p></div>
-                <div class="col-xl-2 d-none d-xl-block" id="flex_spacer"><p><br><br></p></div>
+
+        <div class="row-fluid footer" id="contact">
+            <div class="col">
+                <div class="container">
+                    <a href="https://github.com/lregala"><i class="footer-icon fa-brands fa-github-square fa-2x"></i></a>
+                    <a href="href=https://www.linkedin.com/in/lregala/"><i class="footer-icon fa-brands fa-linkedin fa-2x"></i></a>
+                    <a href="https://www.instagram.com/leoregala/?hl=en"><i class="footer-icon fa-brands fa-instagram-square fa-2x"></i></a>
+                    <a href = "mailto: lregala.b@gmail.com"><i class="footer-icon fa-solid fa-envelope fa-2x"></i></a>
+                </div>
+                <p>© Copyright 2022 L. Regala</p>
+
             </div>
         </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12-fluid" id="spacer"> </div>
-            </div>
-        </div>
-        <div class="container-fluid" id="portfolio">
-            <div class="row" id="port-inner">
-                <div class="row align-items center" id="sec-hdr">
-                    <div class="container-fluid fade-in">
-                        <div class="col d-flex justify-content-center">
-                            <h1><b>Portfolio</b></h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="row align-items center">
-                    <div class="col-12-fluid" id="prt-spacer"> </div>
-                </div>
 
-                <div class="row">
-                    <!-- align-items center  -->
-                    <div class="col-lg-4 col-md-6 d-flex justify-content-center fade-in">
-                        <div class="port-wrapper" onclick="location.href='/portfolio/LBM2D.html';">
-                            <img class="port-thumb" src="/img/port-img/frame119_2d.png" id="p1">
-                            <h6>2D Flow Simulator</h6>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 d-flex justify-content-center fade-in">
-                        <div class="port-wrapper" onclick="location.href='/portfolio/LBM3D.html';">
-                            <img class="port-thumb" src="/img/port-img/frame111_3d.png" id="p2">
-                            <h6>3D Flow Simulator</h6>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 d-flex justify-content-center fade-in">
-                        <div class="port-wrapper" onclick="location.href = 'https://lregala.github.io/metronome/'">
-                            <img class="port-thumb" src="/img/port-img/frame3-metro.png" id="p3">
-                            <h6>Metronome</h6>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 d-flex justify-content-center fade-in">
-                        <div class="port-wrapper" onclick="location.href = 'https://github.com/lregala/AllByMyselfBot'">
-                            <img class="port-thumb" src="/img/port-img/frame-tg-bot-180px.png" id="p4">
-                            <h6>AI Telegram Chatbot</h6>
-                        </div>
-                    </div>
-
-
-                    <div class="col-lg-4 col-md-6 d-flex justify-content-center fade-in">
-                        <div class="port-wrapper" onclick="location.href = 'https://github.com/lregala/IndeedExpress'">
-                            <img class="port-thumb" src="/img/port-img/frame-indeed-logo.png" id="p5">
-                            <h6>Job Board Scraper</h6>
-                        </div>
-                    </div>
-
-
-                    <div class="col-lg-4 col-md-6 d-flex justify-content-center fade-in">
-                        <div class="port-wrapper" onclick="location.href = 'https://github.com/lregala/lregala.github.io'">
-                            <img class="port-thumb" src="/img/port-img/frame_LRlogo.png" id="p6">
-                            <h6>LRegala.github.io</h6>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="row">
-                    <div class="col-6-fluid" id="prt-spacer"> </div>
-                    <div class="col-6-fluid" id="prt-spacer"> </div>
-                </div>
-            
-                <div class="row">
-                    <div class="col-12-fluid" id="prt-spacer"> </div>
-                </div>
-            </div>   
-        </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12-fluid d-flex justify-content-center" id="footer">
-                    <br>
-                    © 2022 L. Regala. All Rights Reserved.
-                </div>
-            </div>
-        </div>
         <div class="container-fluid">
             <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="/img/uparrow.svg" class="img-fluid" alt="Responsive image"></button>
         </div>
-    </div>
-    <script src="https://kit.fontawesome.com/8e663f6748.js" crossorigin="anonymous"></script>
-    <script src="/js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-</body>
-</html>
 
+    </div>
+
+
+    <script src="/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
