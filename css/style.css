@@ -91,17 +91,26 @@ body {
 .jumbotron{
     padding-bottom: 4%;
     margin-bottom: 55%;
+    
 }
+
+
+
+
+
 .jumbotron h1{
     font-size: 4rem;
     font-weight: 900;
     padding-bottom: 4%;
+
 }
 
 .jumbotron p{
     font-size: 2rem;
     font-weight: 400;
     padding-bottom: 4%;
+
+
 }
 
 .btn{
@@ -162,11 +171,12 @@ body {
 
 
 #portfolio{
-    background-color: rgba(157, 157, 157, 0.15); 
+    background-color: rgba(157, 157, 157, 0.2); 
     backdrop-filter: blur(6px);
     color: #fff!important;
     
 }
+
 .prt{
     background-color: rgb(57, 91, 100, 0.5);
     -webkit-backdrop-filter: saturate(5%) brightness(90%) contrast(350%);
@@ -179,7 +189,7 @@ body {
 }
 
 .prtcard{
-    background-color: rgba(253, 253, 253, 0.1);
+    background-color: rgba(253, 253, 253, 0.2);
     border: none;
     text-align: left;
 }
@@ -386,3 +396,5 @@ body {
         max-width: 240px;
     }
 } 
+
+/* Animations */
