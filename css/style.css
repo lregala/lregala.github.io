@@ -172,17 +172,19 @@ body {
 
 #portfolio{
     background-color: rgba(157, 157, 157, 0.3); 
-    backdrop-filter: blur(6px);
+    
+    /* backdrop-filter: blur(6px); */
     color: #fff!important;
     
 }
 
 .prt{
-    background-color: rgb(57, 91, 100, 0.5);
+    background-color: rgb(57, 91, 100, 0.9);
     -webkit-backdrop-filter: saturate(5%) brightness(90%) contrast(350%);
     -o-backdrop-filter: saturate(5%) brightness(90%) contrast(350%);
     -moz-backdrop-filter: saturate(5%) brightness(90%) contrast(350%);
     backdrop-filter: saturate(5%) brightness(90%) contrast(350%);
+    border-style: none;
     padding: 2%;
     padding-bottom: 20%;
     text-align: center;
